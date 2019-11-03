@@ -3,13 +3,13 @@
 1. Leaves evergreen, needle like, scale like or both, usually hard, mostly resinous or odorous. Reproducing through cones -> Key 1 (Conifers)
 2. Leaves evergreen, deciduous or absent, not needle or scale like, resinous or not. Reproducing (almost exclusively) through flowers and fruits -> 3 (Flowering plants) 
 
-    3. Leaves evergreen and parallel veined -> Key 2
-    4. If leaves evergreen, then not parallel veined -> 5
-    
+3. Leaves evergreen and parallel veined -> Key 2
+4. If leaves evergreen, then not parallel veined -> 5
+
 5. Leaves or leaf scars >2 per node (whorled, pseudowhorled or in bundles) -> Key 3
 6. Leaves or leaf scars <3 per node -> 7
 
-    7. Leaves or leaf scars 2 per node (opposite or subopposite) -> Key 4
-    8. Leaves or leaf scars 1 per node (alternate) -> Key 5
+7. Leaves or leaf scars 2 per node (opposite or subopposite) -> Key 4
+8. Leaves or leaf scars 1 per node (alternate) -> Key 5
 
 

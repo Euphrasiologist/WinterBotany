@@ -1,29 +1,39 @@
-# Key 3: Leaves or leaf scars whorled
+# Key 3: Leaves or leaf scars whorled {-}
 
 1. Leaves evergreen -> 3
 2. Leaves deciduous, leaf scars apparent -> 15
-    3. Leaves pseudowhorled -> 5
-    4. Leaves in true whorls -> 7
+
+3. Leaves pseudowhorled -> 5
+4. Leaves in true whorls -> 7
+
 5. Matted evergreen shrub < 0.4m ... *Empetrum* 
 6. Tall shrub to small tree >2m ... *Rhododendron* 
-    7. Leaves 3 whorled -> 9
-    8. Leaves >4 whorled -> 11
+
+7. Leaves 3 whorled -> 9
+8. Leaves >4 whorled -> 11
+
 9. Young twigs glandular hairy ... *Erica* 
 10. Young twigs not glandular hairy -> 11
-    11. Leaves > 10mm wide ... *Kalmia* 
-    12. Leaves < 1mm wide ... *Erica* 
+
+11. Leaves > 10mm wide ... *Kalmia* 
+12. Leaves < 1mm wide ... *Erica* 
+
 13. Leaves tough >6mm wide, strongly retrorsely scabrid ... *Rubia* 
 14. Lvs ± 1mm wide ... *Erica* 
-    15. Leaf scars minute, many, alternate, raised on spurs on second year shoots,
-     reproductive organs cones ... *Larix* 
-    16. Leaf scars larger, 3 per node, not raised -> 17
+
+15. Leaf scars minute, many, alternate, raised on spurs on second year shoots,
+ reproductive organs cones ... *Larix* 
+16. Leaf scars larger, 3 per node, not raised -> 17
+
 17. Twigs stout, leaf scars large with ~ 12 bundle traces in an ellipse. Buds usually arranged in two large and one small ... *Catalpa* (*bignonioides*)
 18. Twigs slender, leaf scars smaller with 3 or fewer bundle traces -> 19
-    19. Bundle trace 1, twigs mostly dead... *Fuschia*
-    20. Bundle traces 3 -> 21
+
+19. Bundle trace 1, twigs mostly dead... *Fuschia*
+20. Bundle traces 3 -> 21
+
 21. Twigs with stellate scales ... *Deutzia* (better characters?)
 22. Twigs hairless or with simple hairs ... *Hydrangea* 
 
 Add Philadelphus?
 
-    
+
