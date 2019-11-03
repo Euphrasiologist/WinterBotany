@@ -1,0 +1,4 @@
+book_filename: "Winter_Botany_Book.Rmd"
+delete_merged_file: true
+output_dir: "_book"
+pagestyle: "empty"

@@ -1,0 +1,39 @@
+--- 
+title: "Winter Botany in the British Isles"
+author: "Max Brown"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+    toc: yes
+  pdf_document:
+    citation_package: natbib
+    includes:
+      in_header: preamble.tex
+    keep_tex: yes
+    latex_engine: xelatex
+    toc: yes
+bibliography: EndnoteLib2.bib
+description: Keys to the genera of British native and alien woody plants
+documentclass: book
+github-repo: Euphrasiologist/WinterBotany
+link-citations: yes
+mainfont: Times New Roman
+classoption: openany
+site: bookdown::bookdown_site
+biblio-style: apalike
+twitter-handle: Euphrasiologist
+url: https\://euphrasiologist.github.io/
+---
+
+# Preface {-}
+
+I am a strong believer in a top down approach when it comes to identification. In the context here, this means trying to compartmentalise hundreds of species into natural groups such as orders, families or genera. Not only does it allow you to not have to worry about species (for the moment), but it allows you to see evolutionary groups of plants more easily. When confronted with new species in other parts of the world, with luck they will be placed within your working knowlegde.
+
+This guide is not intended as a replacement to the guides that already exist but it can be viewed to supplement them. By its nature of only dealing with genera the keys are necessarily shorter and less complex, which is the idea of this guide. Where possible the terminology is minimised and only the major characters of use are mentioned. This key will have very little in it that is actually new, at least in its current form; it will be a synthesis of what in the literature already exists. So for this I cannot take credit. I have relied heavily on the literature, in no particular order: Winter Botany by William Trelease (date?), The Vegetative Key to the British Flora by John Poland and Eric Clement (date?), Flora of the British Isles by Clive Stace (2012), Trees of Britain and Northern Europe by Alan Mitchell (1976), more recently Identification of trees and shrubs in winter using buds and twigs by Bernd Schulz (2018) and the Conifers Plant Crib at the BSBI (1998) by Peter Sell, http://bsbi.org/wp-content/uploads/dlm_uploads/Conifers_Crib_3.pdf. As always, where I could, terminology was simplified, though a glossary will be provided at the end.
+
+The key to broad sections is outlined first as this is a winter botanical key, not all species will be in leaf. First thing to note is that I have separated out the conifers first, because I believe them to have such a distinct structure compared to flowering plants that it would be confusing to integrate them with the other keys. This is not the case for deciduous coniferous species however, which have been included in the main keys. When there are no leaves on a coniferous plant, it is difficult to tell that a deciduous conifer is not a flowering plant. Luckily, there are only four genera that fit into this category *Larix*, *Gingko*, *Metasequoia* and *Taxodium*.
+
+The key should cater for any woody plant you find in the winter in the UK, save a few rare hortal escapes (though many of these are also covered), whether you are at the top of a mountain or by the sea.
+
+My interest was sparked in the winter of 2016, mostly because I was frustrated I knew nothing about twigs! I have been compiling this on and off since then.

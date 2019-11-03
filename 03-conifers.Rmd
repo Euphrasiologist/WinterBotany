@@ -1,0 +1,61 @@
+# Key 1: Conifers {-}
+
+Conifers are seed plants without flowers, instead reproducing through cones. Only a few species are deciduous and the rest are evergreen. Most coniferous genera are highly distinct, with discrete and interesting characters. 
+
+## General Key {-} 
+
+1. Leaves whorled. Either whorled on short shoots and needle like, 3(4)-whorled around a twig or in large distant whorls -> Key 1.1
+2. Leaves not whorled -> 3
+    3. Leaves needle like, in bundles of 2's, 3's or 5's -> *Pinus*
+    4. If leaves needle like, not bundled -> 5
+5. Leaves strictly opposite, adnate, scale like -> Key 1.2
+6. Leaves alternate or spiral. Adnate, scale like or not -> 7
+    7. Young twigs brown or grey (by year 2). If shoot ribbed, not green -> Key 1.3
+    8. Young twigs green (until year 3). Shoot ribbed by green leaf bases -> Key 1.4
+
+### Key 1.1: Leaves whorled {-}
+
+1. Leaves deciduous, cones persistent... *Larix*
+2. Leaves evergreen -> 3
+    3. Leaves in rosettes of 20-80 leaves on short shoots ... *Cedrus* 
+    4. Leaves never on short shoots -> 5
+5. Leaves many, >7, 70-120mm long in large, distant whorls ... *Sciadopitys* 
+6. Leaves in 3's, rarely 4's -> 7
+    7. Leaves blunt tipped ... *Fitzroya* (*cupressoides*)
+    8. Leaves sharply pointed ... *Juniperus*
+
+### Key 1.2: Leaves strictly opposite, scale like (Cupressaceae) {-}
+
+1. Leaves broader, with large white patches below... *Thujopsis* (*dolabrata*)
+2. Leaves smaller, not broad -> 3
+    3. Shoots with at least some leaves in whorls of 3 (check young foliage)... *Juniperus*
+    4. Leaves never 3-whorled -> 5
+5. Branchlets spreading in 3 dimensions. Twigs rounded or 4-sided. Scale leaves all similar. Female cone thickly woody... *Cupressus*
+6. Branchlets arranged in 1 plane, or rarely 3 dimensions. Twigs flat, or slightly flat and 4 sided. -> 7
+    7. Young shoots slightly flat and nearly 4 sided. One common cultivar with branchlets in 3 dimensions... *x Cupressocyparis* (*leylandii*)
+    8. Young shoots very flat, lateral scale leaves keeled -> 9
+9. Scale leaves same colour on both sides, scentless foliage when crushed... *Platycladus* (*orientalis*)
+10. Scale leaves lighter or whitish at margins below -> 11
+    11. Female cones globular and woody, terminal shoots whip-like... *Chamaecyparis*
+    12. Female cones flask shaped with scales overlapping, terminal shoots erect... *Thuja* (*plicata*)
+
+### Key 1.3: Young twigs brown or grey {-}
+
+1. Leaves with sucker like base, attached directly to twig... *Abies*
+2. Leaves without sucker like base, attached to a projection on twig -> 3
+    3. Leaves with indistinct petiole, twig very rough when leaves fallen... *Picea*
+    4. Leaves with obvious petiole, bare shoots slightly rough -> 5
+5. Leaves minutely serrate, buds hidden by leaves... *Tsuga*
+6. Leaves entire, buds prominent... *Pseudotsuga* (*menziesii*)
+
+
+### Key 1.4: Young twigs green {-}
+
+1. Leaves with a petiole... *Taxus* (*baccata*)
+2. Leaves sessile -> 3
+    3. Leaves of two kinds, scale like, and linear/flat... *Sequoia* (*sempervirens*)
+    4. Leaves all similar -> 5
+5. Leaves >25mm long, >10mm wide, sharply spine tipped... *Araucaria* (*araucana*)
+6. Leaves <25mm long -> 7
+    7. Leaves spirally arranged, with free part 3-7mm... *Sequoiadendron* (*giganteum*)
+    8. Leaves in 5 ranks, incurved, with free part 5-20mm... *Cryptomeria* (*japonica*)

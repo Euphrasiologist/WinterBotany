@@ -1,0 +1,3509 @@
+\documentclass[openany]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+    \setmainfont[]{Times New Roman}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Winter Botany in the British Isles},
+            pdfauthor={Max Brown},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Winter Botany in the British Isles}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Max Brown}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{2019-11-03}
+
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{preface}{%
+\chapter*{Preface}\label{preface}}
+\addcontentsline{toc}{chapter}{Preface}
+
+I am a strong believer in a top down approach when it comes to
+identification. In the context here, this means trying to
+compartmentalise hundreds of species into natural groups such as orders,
+families or genera. Not only does it allow you to not have to worry
+about species (for the moment), but it allows you to see evolutionary
+groups of plants more easily. When confronted with new species in other
+parts of the world, with luck they will be placed within your working
+knowlegde.
+
+This guide is not intended as a replacement to the guides that already
+exist but it can be viewed to supplement them. By its nature of only
+dealing with genera the keys are necessarily shorter and less complex,
+which is the idea of this guide. Where possible the terminology is
+minimised and only the major characters of use are mentioned. This key
+will have very little in it that is actually new, at least in its
+current form; it will be a synthesis of what in the literature already
+exists. So for this I cannot take credit. I have relied heavily on the
+literature, in no particular order: Winter Botany by William Trelease
+(date?), The Vegetative Key to the British Flora by John Poland and Eric
+Clement (date?), Flora of the British Isles by Clive Stace (2012), Trees
+of Britain and Northern Europe by Alan Mitchell (1976), more recently
+Identification of trees and shrubs in winter using buds and twigs by
+Bernd Schulz (2018) and the Conifers Plant Crib at the BSBI (1998) by
+Peter Sell,
+\url{http://bsbi.org/wp-content/uploads/dlm_uploads/Conifers_Crib_3.pdf}.
+As always, where I could, terminology was simplified, though a glossary
+will be provided at the end.
+
+The key to broad sections is outlined first as this is a winter
+botanical key, not all species will be in leaf. First thing to note is
+that I have separated out the conifers first, because I believe them to
+have such a distinct structure compared to flowering plants that it
+would be confusing to integrate them with the other keys. This is not
+the case for deciduous coniferous species, which have been included in
+the main keys. When there are no leaves on a coniferous plant, it is
+difficult to tell that a deciduous conifer is not a flowering plant.
+Luckily, there are only four genera that fit into this category
+\emph{Larix}, \emph{Gingko}, \emph{Metasequoia} and \emph{Taxodium}.
+
+The key should cater for any woody plant you find in the winter in the
+UK, save a few rare hortal escapes (though many of these are also
+covered), whether you are at the top of a mountain or by the sea.
+
+My interest was sparked in the winter of 2016, mostly because I was
+frustrated I knew nothing about twigs! I have been compiling this on and
+off since then.
+
+\hypertarget{introduction}{%
+\chapter*{Introduction}\label{introduction}}
+\addcontentsline{toc}{chapter}{Introduction}
+
+Many woody plants in (especially northern) temperate climates with
+seasonal weather shed their leaves in the colder months of the year. On
+the most recent years growth, leaves fall to reveal the twig beneath. It
+is these structures left behind after the leaves fall that are valuable
+in identification. The twig itself can vary in thickness, colour, growth
+pattern (straight or zig-zagged) and cross sectional shape of the twig
+(round, oval, square).
+
+Where the leaf falls a scar is left behind. The distribution of leaf
+scars on a twig (phyllotaxy) is of major importance. The presence of at
+least one leaf scar indicates where the node is on a twig. Leaf scars
+can be present in groups of three or more, in which case they are
+considered whorled. Secondly leaf scars can be paired, usually on
+opposite sides of the twig. Thirdly and most commonly, leaf scars are
+present singularly at a node.Leaf scars are characteristic in size,
+shape and the number and distribution of vascular bundles present within
+them.
+
+Above the leaf scar, a bud will be present which contains meristems that
+will continue next years growth. They are often surrounded by scales,
+the size, shape and number of which are often diagnostic. Buds can be
+multiple at one node either next to each other (collateral), or above
+one another (superposed). The presence or absence of an \emph{end} or
+\emph{terminal} bud is determined either by the absence of an obvious
+leaf scar or by its morphological difference to lateral buds. Terminal
+buds are usually larger, if present. Sometimes buds can appear to be
+different even on the lateral buds and this is usually associated with a
+difference between buds that will go on to produce flowers, and those
+that will continue vegetative growth.
+
+Twigs can have many and varied outgrowths on them. These vary from
+small, thin flexible outgrowths (hairs), which can be shaped simply,
+forked, tree-like, woolly, star-shaped and glandular to name a few.
+Hardened outgrowths of the stem are called \emph{prickles}. In contrast,
+\emph{spines} are modified leaves and therefore have a bud at the base
+of them (be careful, bud may be obscured!) and \emph{thorns} are
+modified stems.
+
+Where there is only one species in the genus, or the key specifically
+arrives at a species, the species is indicated in parentheses.
+
+\hypertarget{general-key}{%
+\chapter*{General Key}\label{general-key}}
+\addcontentsline{toc}{chapter}{General Key}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Leaves evergreen, needle like, scale like or both, usually hard,
+  mostly resinous or odorous. Reproducing through cones -\textgreater{}
+  Key 1 (Conifers)
+\item
+  Leaves evergreen, deciduous or absent, not needle or scale like,
+  resinous or not. Reproducing (almost exclusively) through flowers and
+  fruits -\textgreater{} 3 (Flowering plants)
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves evergreen and parallel veined -\textgreater{} Key 2
+  \item
+    If leaves evergreen, then not parallel veined -\textgreater{} 5
+  \end{enumerate}
+\item
+  Leaves or leaf scars \textgreater{}2 per node (whorled, pseudowhorled
+  or in bundles) -\textgreater{} Key 3
+\item
+  Leaves or leaf scars \textless{}3 per node -\textgreater{} 7
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Leaves or leaf scars 2 per node (opposite or subopposite)
+    -\textgreater{} Key 4
+  \item
+    Leaves or leaf scars 1 per node (alternate) -\textgreater{} Key 5
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{conifers}{%
+\chapter*{Conifers}\label{conifers}}
+\addcontentsline{toc}{chapter}{Conifers}
+
+\hypertarget{key-1-coniferous-plants-reproducing-by-cones}{%
+\section*{Key 1: Coniferous plants reproducing by
+cones}\label{key-1-coniferous-plants-reproducing-by-cones}}
+\addcontentsline{toc}{section}{Key 1: Coniferous plants reproducing by
+cones}
+
+Conifers are seed plants without flowers, instead reproducing through
+cones. Only a few species are deciduous and the rest are evergreen. Most
+coniferous genera are highly distinct, with discrete and interesting
+characters.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves whorled. Either whorled on short shoots and needle like,
+  3(4)-whorled around a twig or in large distant whorls -\textgreater{}
+  Key 1.1
+\item
+  Leaves not whorled -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves needle like, in bundles of 2's, 3's or 5's -\textgreater{}
+    \emph{Pinus}
+  \item
+    If leaves needle like, not bundled -\textgreater{} 5
+  \end{enumerate}
+\item
+  Leaves strictly opposite, adnate, scale like -\textgreater{} Key 1.2
+\item
+  Leaves alternate or spiral. Adnate, scale like or not -\textgreater{}
+  7
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Young twigs brown or grey (by year 2). If shoot ribbed, not green
+    -\textgreater{} Key 1.3
+  \item
+    Young twigs green (until year 3). Shoot ribbed by green leaf bases
+    -\textgreater{} Key 1.4
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{key-1.1-leaves-whorled}{%
+\subsection*{Key 1.1: Leaves whorled}\label{key-1.1-leaves-whorled}}
+\addcontentsline{toc}{subsection}{Key 1.1: Leaves whorled}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves deciduous, cones persistent\ldots{} \emph{Larix}
+\item
+  Leaves evergreen -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves in rosettes of 20-80 leaves on short shoots \ldots{}
+    \emph{Cedrus}
+  \item
+    Leaves never on short shoots -\textgreater{} 5
+  \end{enumerate}
+\item
+  Leaves many, \textgreater{}7, 70-120mm long in large, distant whorls
+  \ldots{} \emph{Sciadopitys}
+\item
+  Leaves in 3's, rarely 4's -\textgreater{} 7
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Leaves blunt tipped \ldots{} \emph{Fitzroya} (cupressoides)
+  \item
+    Leaves sharply pointed \ldots{} \emph{Juniperus}
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{key-1.2-leaves-strictly-opposite-scale-like-cupressaceae}{%
+\subsection*{Key 1.2: Leaves strictly opposite, scale like
+(Cupressaceae)}\label{key-1.2-leaves-strictly-opposite-scale-like-cupressaceae}}
+\addcontentsline{toc}{subsection}{Key 1.2: Leaves strictly opposite,
+scale like (Cupressaceae)}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves broader, with large white patches below\ldots{}
+  \emph{Thujopsis} (dolabrata)
+\item
+  Leaves smaller, not broad -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Shoots with at least some leaves in whorls of 3 (check young
+    foliage)\ldots{} \emph{Juniperus}
+  \item
+    Leaves never 3-whorled -\textgreater{} 5
+  \end{enumerate}
+\item
+  Branchlets spreading in 3 dimensions. Twigs rounded or 4-sided. Scale
+  leaves all similar. Female cone thickly woody\ldots{} \emph{Cupressus}
+\item
+  Branchlets arranged in 1 plane, or rarely 3 dimensions. Twigs flat, or
+  slightly flat and 4 sided. -\textgreater{} 7
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Young shoots slightly flat and nearly 4 sided. One common cultivar
+    with branchlets in 3 dimensions\ldots{} \emph{x Cupressocyparis}
+    (leylandii)
+  \item
+    Young shoots very flat, lateral scale leaves keeled -\textgreater{}
+    9
+  \end{enumerate}
+\item
+  Scale leaves same colour on both sides, scentless foliage when
+  crushed\ldots{} \emph{Platycladus} (orientalis)
+\item
+  Scale leaves lighter or whitish at margins below -\textgreater{} 11
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \tightlist
+  \item
+    Female cones globular and woody, terminal shoots whip-like\ldots{}
+    \emph{Chamaecyparis}
+  \item
+    Female cones flask shaped with scales overlapping, terminal shoots
+    erect\ldots{} \emph{Thuja} (plicata)
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{key-1.3-young-twigs-brown-or-grey}{%
+\subsection*{Key 1.3: Young twigs brown or
+grey}\label{key-1.3-young-twigs-brown-or-grey}}
+\addcontentsline{toc}{subsection}{Key 1.3: Young twigs brown or grey}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves with sucker like base, attached directly to twig\ldots{}
+  \emph{Abies}
+\item
+  Leaves without sucker like base, attached to a projection on twig
+  -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves with indistinct petiole, twig very rough when leaves
+    fallen\ldots{} \emph{Picea}
+  \item
+    Leaves with obvious petiole, bare shoots slightly rough
+    -\textgreater{} 5
+  \end{enumerate}
+\item
+  Leaves minutely serrate, buds hidden by leaves\ldots{} \emph{Tsuga}
+\item
+  Leaves entire, buds prominent\ldots{} \emph{Pseudotsuga} (menziesii)
+\end{enumerate}
+
+\hypertarget{key-1.4-young-twigs-green}{%
+\subsection*{Key 1.4: Young twigs
+green}\label{key-1.4-young-twigs-green}}
+\addcontentsline{toc}{subsection}{Key 1.4: Young twigs green}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves with a petiole\ldots{} \emph{Taxus} (baccata)
+\item
+  Leaves sessile -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves of two kinds, scale like, and linear/flat\ldots{}
+    \emph{Sequoia} (sempervirens)
+  \item
+    Leaves all similar -\textgreater{} 5
+  \end{enumerate}
+\item
+  Leaves \textgreater{}25mm long, \textgreater{}10mm wide, sharply spine
+  tipped\ldots{} \emph{Araucaria} (araucana)
+\item
+  Leaves \textless{}25mm long -\textgreater{} 7
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Leaves spirally arranged, with free part 3-7mm\ldots{}
+    \emph{Sequoiadendron} (giganteum)
+  \item
+    Leaves in 5 ranks, incurved, with free part 5-20mm\ldots{}
+    \emph{Cryptomeria} (japonica)
+  \end{enumerate}
+\end{enumerate}
+
+Introduction
+
+I am a strong believer in a top down approach when it comes to
+identification. The top down approach in this context means trying to
+compartmentalise hundreds of species into natural groups such as orders,
+families or genera. Not only does it allow you to not have to worry
+about species (for the moment), but it allows you to see evolutionary
+groups of plants more easily. When confronted with new species in other
+parts of the world, with luck they will be placed within your working
+framework.
+
+This guide is not intended as a replacement to the guides that already
+exist but it can be viewed to supplement them. By its nature of only
+dealing with genera the keys are necessarily shorter and less complex,
+which is the idea of this guide. Where possible the terminology is
+minimised and only the major characters of use are mentioned. This key
+will have very little in it that is actually new, it will be a synthesis
+of what in the literature already exists. So for this I cannot take
+credit. I have relied heavily on the literature, in no particular order:
+Winter Botany by William Trelease (date?), The Vegetative Key to the
+British Flora by John Poland and Eric Clement (date?), Flora of the
+British Isles by Clive Stace (2012), Trees of Britain and Northern
+Europe by Alan Mitchell (1976), more recently Identification of trees
+and shrubs in winter using buds and twigs by Bernd Schulz (2018) and the
+Conifers Plant Crib at the BSBI (1998) by Peter Sell,
+\url{http://bsbi.org/wp-content/uploads/dlm_uploads/Conifers_Crib_3.pdf}.
+As always, where I could, terminology was simplified, though a glossary
+will be provided at the end.
+
+The key to broad sections is outlined below. As this is a winter
+botanical key, not all species will be in leaf. First thing to note is
+that I have separated out the conifers first, because I believe them to
+have such a distinct structure compared to flowering plants that it
+would be confusing to integrate them with the other keys. This is not
+the case for deciduous coniferous species, which have been included in
+the main keys. This is because when there are no leaves, it is difficult
+to tell that a deciduous conifer is not a flowering plant. These genera
+are \emph{Larix}, \emph{Gingko}, \emph{Metasequoia} and \emph{Taxodium}.
+
+Prickles are acute outgrowth of the stem, spines are modified leaves and
+thorns are modified stems.
+
+The key should cater for any woody plant you find in the winter in the
+UK, save a few rare hortal escapes (though many of these are also
+covered), whether you are at the top of a mountain or by the sea.
+
+My interest was sparked in the winter of 2016, mostly because I was
+frustrated I knew nothing about twigs! I have been compiling this on and
+off since then.
+
+\hypertarget{keys}{%
+\chapter{Keys}\label{keys}}
+
+\hypertarget{general-key-1}{%
+\section{General Key}\label{general-key-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Leaves evergreen, needle like, scale like or both, usually hard,
+  mostly resinous or odorous. Reproducing through cones -\textgreater{}
+  Key 1 (Conifers)
+\item
+  Leaves evergreen, deciduous or absent, not needle or scale like,
+  resinous or not. Reproducing (almost exclusively) through flowers and
+  fruits -\textgreater{} 3 (Flowering plants)
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves evergreen and parallel veined -\textgreater{} Key 2
+  \item
+    If leaves evergreen, then not parallel veined -\textgreater{} 5
+  \end{enumerate}
+\item
+  Leaves or leaf scars \textgreater{}2 per node (whorled, pseudowhorled
+  or in bundles) -\textgreater{} Key 3
+\item
+  Leaves or leaf scars \textless{}3 per node -\textgreater{} 7
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Leaves or leaf scars 2 per node (opposite or subopposite)
+    -\textgreater{} Key 4
+  \item
+    Leaves or leaf scars 1 per node (alternate) -\textgreater{} Key 5
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{key-1-coniferous-plants-reproducing-by-cones-1}{%
+\section{Key 1: Coniferous plants reproducing by
+cones}\label{key-1-coniferous-plants-reproducing-by-cones-1}}
+
+Conifers are seed plants without flowers, instead reproducing through
+cones. Only a few species are deciduous and the rest are evergreen. Most
+coniferous genera are highly distinct, with discrete and interesting
+characters.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves whorled. Either whorled on short shoots and needle like,
+  3(4)-whorled around a twig or in large distant whorls -\textgreater{}
+  Key 1.1
+\item
+  Leaves not whorled -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves needle like, in bundles of 2's, 3's or 5's -\textgreater{}
+    \emph{Pinus}
+  \item
+    If leaves needle like, not bundled -\textgreater{} 5
+  \end{enumerate}
+\item
+  Leaves strictly opposite, adnate, scale like -\textgreater{} Key 1.2
+\item
+  Leaves alternate or spiral. Adnate, scale like or not -\textgreater{}
+  7
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Young twigs brown or grey (by year 2). If shoot ribbed, not green
+    -\textgreater{} Key 1.3
+  \item
+    Young twigs green (until year 3). Shoot ribbed by green leaf bases
+    -\textgreater{} Key 1.4
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{key-1.1-leaves-whorled-1}{%
+\subsection{Key 1.1: Leaves whorled}\label{key-1.1-leaves-whorled-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves deciduous, cones persistent\ldots{} \emph{Larix}
+\item
+  Leaves evergreen -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves in rosettes of 20-80 leaves on short shoots \ldots{}
+    \emph{Cedrus}
+  \item
+    Leaves never on short shoots -\textgreater{} 5
+  \end{enumerate}
+\item
+  Leaves many, \textgreater{}7, 70-120mm long in large, distant whorls
+  \ldots{} \emph{Sciadopitys}
+\item
+  Leaves in 3's, rarely 4's -\textgreater{} 7
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Leaves blunt tipped \ldots{} \emph{Fitzroya} (cupressoides)
+  \item
+    Leaves sharply pointed \ldots{} \emph{Juniperus}
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{key-1.2-leaves-strictly-opposite-scale-like-cupressaceae-1}{%
+\subsection{Key 1.2: Leaves strictly opposite, scale like
+(Cupressaceae)}\label{key-1.2-leaves-strictly-opposite-scale-like-cupressaceae-1}}
+
+Cupressus - foliage in spray like plumes, branchlets at varying angles.
+Twigs rounded or 4-sided, the scale-leaves even on all sides
+
+x Cupressocyparis - foliage in flattened pinnate sprays, cone globular
+and woody. Young shoots only slightly flat, nearly 4-sided
+
+Chamaecyparis - foliage in flattened pinnate sprays, cone globular and
+woody. Twigs flat, the facial scale-leaves usually flat, rarely keeled,
+the lateral scale-leaves keeled. Young shoots distinctly flat. Terminal
+shoot usually `whip-like', drooping; cones globose, the peltate scales
+touching only at the margins
+
+Thuja - foliage in flattened pinnate sprays, cone flask shaped,
+leathery. Twigs flat, the facial scale-leaves usually flat, rarely
+keeled, the lateral scale-leaves keeled. Young shoots distinctly flat.
+Terminal shoot erect; cones ovate to oblong, their scales overlapping.
+Foliage spreading in flat sprays, aromatic when crushed; scale-leaves a
+different colour on lower sides from upper
+
+Platycladus -foliage in flattened pinnate sprays, cone flask shaped,
+leathery. Foliage scentless. Twigs flat, the facial scale-leaves usually
+flat, rarely keeled, the lateral scale-leaves keeled. Young shoots
+distinctly flat. Foliage in vertical sprays, without scent when crushed;
+scale-leaves the same colour on both sides
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves broader, with large white patches below\ldots{}
+  \emph{Thujopsis} (dolabrata)
+\item
+  Leaves smaller, not broad -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Shoots with at least some leaves in whorls of 3 (check young
+    foliage)\ldots{} \emph{Juniperus}
+  \item
+    Leaves never 3-whorled -\textgreater{} 5
+  \end{enumerate}
+\item
+  Branchlets spreading in 3 dimensions. Twigs rounded or 4-sided. Scale
+  leaves all similar. Female cone thickly woody\ldots{} \emph{Cupressus}
+\item
+  Branchlets arranged in 1 plane, or rarely 3 dimensions. Twigs flat, or
+  slightly flat and 4 sided. -\textgreater{} 7
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Young shoots slightly flat and nearly 4 sided. One common cultivar
+    with branchlets in 3 dimensions\ldots{} \emph{x Cupressocyparis}
+    (leylandii)
+  \item
+    Young shoots very flat, lateral scale leaves keeled -\textgreater{}
+    9
+  \end{enumerate}
+\item
+  Scale leaves same colour on both sides, scentless foliage when
+  crushed\ldots{} \emph{Platycladus} (orientalis)
+\item
+  Scale leaves lighter or whitish at margins below -\textgreater{} 11
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \tightlist
+  \item
+    Female cones globular and woody, terminal shoots whip-like\ldots{}
+    \emph{Chamaecyparis}
+  \item
+    Female cones flask shaped with scales overlapping, terminal shoots
+    erect\ldots{} \emph{Thuja} (plicata)
+  \end{enumerate}
+\end{enumerate}
+
+Olfactory table:
+
+Thujopsis Juniperus - smells like gin? Cupressus x Cupressocyparis
+Platycladus - no smell Chamaecyparis Thuja - sweet pineapple
+
+\hypertarget{key-1.3-young-twigs-brown-or-grey-1}{%
+\subsection{Key 1.3: Young twigs brown or
+grey}\label{key-1.3-young-twigs-brown-or-grey-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves with sucker like base, attached directly to twig\ldots{}
+  \emph{Abies}
+\item
+  Leaves without sucker like base, attached to a projection on twig
+  -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves with indistinct petiole, twig very rough when leaves
+    fallen\ldots{} \emph{Picea}
+  \item
+    Leaves with obvious petiole, bare shoots slightly rough
+    -\textgreater{} 5
+  \end{enumerate}
+\item
+  Leaves minutely serrate, buds hidden by leaves\ldots{} \emph{Tsuga}
+\item
+  Leaves entire, buds prominent\ldots{} \emph{Pseudotsuga} (menziesii)
+\end{enumerate}
+
+\hypertarget{key-1.4-young-twigs-green-1}{%
+\subsection{Key 1.4: Young twigs
+green}\label{key-1.4-young-twigs-green-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves with a petiole\ldots{} \emph{Taxus} (baccata)
+\item
+  Leaves sessile -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves of two kinds, scale like, and linear/flat\ldots{}
+    \emph{Sequoia} (sempervirens)
+  \item
+    Leaves all similar -\textgreater{} 5
+  \end{enumerate}
+\item
+  Leaves \textgreater{}25mm long, \textgreater{}10mm wide, sharply spine
+  tipped\ldots{} \emph{Araucaria} (araucana)
+\item
+  Leaves \textless{}25mm long -\textgreater{} 7
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Leaves spirally arranged, with free part 3-7mm\ldots{}
+    \emph{Sequoiadendron} (giganteum)
+  \item
+    Leaves in 5 ranks, incurved, with free part 5-20mm\ldots{}
+    \emph{Cryptomeria} (japonica)
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{key-2-leaves-evergreen-parallel-veined-asparagaceae}{%
+\section{Key 2: Leaves evergreen, parallel veined
+(Asparagaceae)}\label{key-2-leaves-evergreen-parallel-veined-asparagaceae}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves \textgreater{}20cm long in rosettes at apex of stem, palm-like
+  -\textgreater{} 3
+\item
+  Leaves \textless{}20cm long spirally arranged on stems \ldots{}
+  \emph{Ruscus}
+\item
+  Leaves with translucent veins \ldots{} \emph{Cordyline} (australis)
+\item
+  Leaves with indistinct opaque veins \ldots{} \emph{Yucca}
+\end{enumerate}
+
+\hypertarget{key-3-leaves-or-leaf-scars-whorled}{%
+\section{Key 3: Leaves or leaf scars
+whorled}\label{key-3-leaves-or-leaf-scars-whorled}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves evergreen -\textgreater{} 3
+\item
+  Leaves deciduous, leaf scars apparent -\textgreater{} 15
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves pseudowhorled -\textgreater{} 5
+  \item
+    Leaves in true whorls -\textgreater{} 7
+  \end{enumerate}
+\item
+  Matted evergreen shrub \textless{} 0.4m \ldots{} \emph{Empetrum}
+\item
+  Tall shrub to small tree \textgreater{}2m \ldots{} \emph{Rhododendron}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Leaves 3 whorled -\textgreater{} 9
+  \item
+    Leaves \textgreater{}4 whorled -\textgreater{} 11
+  \end{enumerate}
+\item
+  Young twigs glandular hairy \ldots{} \emph{Erica}
+\item
+  Young twigs not glandular hairy -\textgreater{} 11
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \tightlist
+  \item
+    Leaves \textgreater{} 10mm wide \ldots{} \emph{Kalmia}
+  \item
+    Leaves \textless{} 1mm wide \ldots{} \emph{Erica}
+  \end{enumerate}
+\item
+  Leaves tough \textgreater{}6mm wide, strongly retrorsely scabrid
+  \ldots{} \emph{Rubia}
+\item
+  Lvs ± 1mm wide \ldots{} \emph{Erica}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{14}
+  \tightlist
+  \item
+    Leaf scars minute, many, alternate, raised on spurs on second year
+    shoots, reproductive organs cones \ldots{} \emph{Larix}
+  \item
+    Leaf scars larger, 3 per node, not raised -\textgreater{} 17
+  \end{enumerate}
+\item
+  Twigs stout, leaf scars large with \textasciitilde{} 12 bundle traces
+  in an ellipse. Buds usually arranged in two large and one small
+  \ldots{} \emph{Catalpa} (bignonioides)
+\item
+  Twigs slender, leaf scars smaller with 3 or fewer bundle traces
+  -\textgreater{} 19
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{18}
+  \tightlist
+  \item
+    Bundle trace 1, twigs mostly dead\ldots{} \emph{Fuschia}
+  \item
+    Bundle traces 3 -\textgreater{} 21
+  \end{enumerate}
+\item
+  Twigs with stellate scales \ldots{} \emph{Deutzia} (better
+  characters?)
+\item
+  Twigs hairless or with simple hairs \ldots{} \emph{Hydrangea}
+\end{enumerate}
+
+Add Philadelphus?
+
+\hypertarget{key-4-leaves-or-leaf-scars-opposite}{%
+\section{Key 4: Leaves or leaf scars
+opposite}\label{key-4-leaves-or-leaf-scars-opposite}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Plants scrambling, climbing or parasitic on trees -\textgreater{} Key
+  4.1
+\item
+  Plants not as above -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Plants evergreen -\textgreater{} Key 4.2
+  \item
+    Plants deciduous -\textgreater{} Key 4.3
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{key-4.1-climbing-or-epiphytic-plants-parasitic-on-trees}{%
+\subsection{Key 4.1: Climbing, or epiphytic plants parasitic on
+trees}\label{key-4.1-climbing-or-epiphytic-plants-parasitic-on-trees}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Plant parasitic on tree branches with twigs repeatedly forked at the
+  nodes -\textgreater{} 3
+\item
+  Plant rooted in soil -\textgreater{} 5
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Twigs sickly green \ldots{} \emph{Viscum} (album)
+  \item
+    Twigs brown \ldots{} \emph{Loranthus} (rare hortal)
+  \end{enumerate}
+\item
+  Evergreen (or semi-evergreen) -\textgreater{} 7
+\item
+  Deciduous -\textgreater{} 9
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Leaves simple \ldots{} \emph{Lonicera}
+  \item
+    Leaves compound, climbing using coiling petioles \ldots{}
+    \emph{Clematis}
+  \end{enumerate}
+\item
+  Climbing by coiling petioles, persisting in winter \ldots{}
+  \emph{Clematis}
+\item
+  Climbing by aerial roots or scrambling -\textgreater{} 11
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \tightlist
+  \item
+    Anvil shaped hairs on stems, stems twining clockwise, fruits
+    persistent with many overlapping papery bracts \ldots{}
+    \emph{Humulus} (lupulus)
+  \item
+    Not as above -\textgreater{} 13
+  \end{enumerate}
+\item
+  Bundle traces 1, scrambling, weakly climbing \ldots{} \emph{Jasminum}
+  (nudiflorum)
+\item
+  Bundle traces \textgreater{}1 -\textgreater{} 15
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{14}
+  \tightlist
+  \item
+    Bundle traces 3 \ldots{} \emph{Lonicera}
+  \item
+    Bundle traces 5 \ldots{} \emph{Schizophragma} (hydrangoides)
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{key-4.2-evergreen-plants}{%
+\subsection{Key 4.2: Evergreen plants}\label{key-4.2-evergreen-plants}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves simple and entire -\textgreater{} 3
+\item
+  Leaves compound or toothed -\textgreater{} 5
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Trailing, thin, wiry shrubs \textless{}20cm tall at maturity
+    -\textgreater{} Key 4.2.1
+  \item
+    Tree or upright shrub -\textgreater{} Key 4.2.2
+  \end{enumerate}
+\item
+  Leaves ternate\ldots{} \emph{Choisya} (ternata)
+\item
+  Leaves toothed -\textgreater{} Key 4.2.3
+\end{enumerate}
+
+\hypertarget{key-4.2.1-wiring-creeping-trailing-shrubs}{%
+\subsubsection{Key 4.2.1: Wiring, creeping, trailing
+shrubs}\label{key-4.2.1-wiring-creeping-trailing-shrubs}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves with stellate hairs \ldots{} \emph{Helianthemum}
+\item
+  Leaves with simple hairs or hairless -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves translucent dotted with sunken glands, aromatic \ldots{}
+    \emph{Thymus}
+  \item
+    Leaves not translucent dotted or aromatic -\textgreater{} 5
+  \end{enumerate}
+\item
+  Leaves with revolute margins -\textgreater{} 7
+\item
+  Leaves with flat margins -\textgreater{} 11
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Leaves \textless{} 2mm long, petiole absent \ldots{} \emph{Calluna}
+  \item
+    Leaves \textgreater{}2mm long, petiole present -\textgreater{} 9
+  \end{enumerate}
+\item
+  Leaves linear, rounded in cross section, 2-5mm long \ldots{}
+  \emph{Frankenia}
+\item
+  Leaves oblong, 5-8mm long -\textgreater{} \emph{Loiseleuria}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \tightlist
+  \item
+    Stipules absent -\textgreater{} 13
+  \item
+    Stipules present \ldots{} \emph{Herniaria}
+  \end{enumerate}
+\item
+  \emph{Veronica} bifurcate Linnaea here
+\item
+  \emph{Veronica} bifurcate Linnaea here
+\end{enumerate}
+
+Linnaea here?
+
+\hypertarget{key-4.2.2-shrubs-trees.-leaves-simple.}{%
+\subsubsection{Key 4.2.2: Shrubs, trees. Leaves
+simple.}\label{key-4.2.2-shrubs-trees.-leaves-simple.}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves with clear 2 pinnate translucent veins on leaves
+  -\textgreater{} 3
+\item
+  Leaves with 2 pinnate veins indistinct or absent -\textgreater{} 19
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves sessile -\textgreater{} 3
+  \item
+    Leaves petiolate -\textgreater{} 9
+  \end{enumerate}
+\item
+  Leaves \textless{}1.5cm wide and with revolute margins at maturity
+  -\textgreater{} 5
+\item
+  Leaves \textgreater{}2cm wide, with either transulcent dotted leaves
+  or with minute glands attached to veinlets. Leaf scars triangular,
+  bundle trace 1, pith spongey and excavated (hollow) -\textgreater{}
+  \emph{Hypericum}
+\item
+  Leaves \textless{}4mm wide, rosemary scented. Bundle traces 3 \ldots{}
+  \emph{Rosmarinus}
+\item
+  Leaves \textgreater{}4mm wide (on average), odourless. Bundle traces
+  in a transverse line \ldots{} \emph{Kalmia}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{8}
+  \tightlist
+  \item
+    Leaves \textgreater{}2cm long -\textgreater{} 11
+  \item
+    Leaves \textless{}2cm long \ldots{} \emph{Lonicera} (leaves
+    \textless{}2cm long? Really?)
+  \end{enumerate}
+\item
+  Leaves with dendritic hairs \ldots{} \emph{Phlomis}
+\item
+  Leaves with hairs simple or absent -\textgreater{} 13
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{12}
+  \tightlist
+  \item
+    Leaves with dense silver silky hairs below \ldots{} \emph{Olearia}
+    (GARRYA? LEAVES GREY WOOLLY BELOW AND UNDULATE LEAF MARGINS?)
+  \item
+    Leaves hairless both sides, except for vein axils below
+    -\textgreater{} 15
+  \end{enumerate}
+\item
+  Vein axils below with tufts of hairs \ldots{} \emph{Viburnum}
+\item
+  Leaves glabrous -\textgreater{} 17
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{16}
+  \tightlist
+  \item
+    Sipules present, fused between petiole bases, young twigs ± square
+    \ldots{} \emph{Coprosma}
+  \item
+    Stipules absent, young twigs rounded, at most angled slightly below
+    the nodes \ldots{} \emph{Ligustrum}
+  \end{enumerate}
+\item
+  Leaves white hairy at least below, strongly aromatic -\textgreater{}
+  21
+\item
+  Leaves never white hairy, aromatic or not -\textgreater{} 23
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{20}
+  \tightlist
+  \item
+    Leaves hairy with long stellate hairs both sides, lavendar scented
+    \ldots{} \emph{Lavandula}
+  \item
+    Leaves glabrous above, rosemary scented \ldots{} \emph{Rosmarinus}
+  \end{enumerate}
+\item
+  Twigs square, leaves odorous -\textgreater{} 25
+\item
+  Twigs round, leaves odourless -\textgreater{} 29
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{24}
+  \tightlist
+  \item
+    Leaves gland pitted one or either side -\textgreater{} 25
+  \item
+    Leaves not gland pitted -\textgreater{} \emph{Buxus}
+  \end{enumerate}
+\item
+  Young twigs green, minutely ciliate, menthol scented \ldots{}
+  \emph{Hyssopus}
+\item
+  Young twigs whitish, leaves long ciliate at base, sage scented
+  \ldots{} \emph{Satureja}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{28}
+  \tightlist
+  \item
+    Leaves strongly revolute, \textless{}2mm long, sessile \ldots{}
+    \emph{Calluna}
+  \item
+    Leaves not revolute -\textgreater{} 31
+  \end{enumerate}
+\item
+  Leaves fleshy, mealy grey \textless{}6cm, not valvate when developing
+  \ldots{} \emph{Atriplex}
+\item
+  Leaves not fleshy, valvate when developing \ldots{} \emph{Veronica}
+  (sect Hebe)
+\end{enumerate}
+
+\hypertarget{key-4.2.3-shrubs-trees.-leaves-toothed.}{%
+\subsubsection{Key 4.2.3: Shrubs, trees. Leaves
+toothed.}\label{key-4.2.3-shrubs-trees.-leaves-toothed.}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Twigs with dendritic hairs \ldots{} \emph{Phlomis}
+\item
+  Twigs never with dendritic hairs -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Twigs with stellate hairs -\textgreater{} 5
+  \item
+    Twigs without stellate hairs -\textgreater{} 7
+  \end{enumerate}
+\item
+  Stipules present, leaves white felted below \ldots{} \emph{Buddleja}
+\item
+  Stipules absent, leaves stellate hairy below \ldots{} \emph{Viburnum}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Leaves \textless{} 2cm long, stems creeping and prostrate \ldots{}
+    \emph{Linnaea}
+  \item
+    Leaves \textgreater{}2cm long, stems never creeping -\textgreater{}
+    9
+  \end{enumerate}
+\item
+  Petiole with 1 vascular bundle -\textgreater{} 11
+\item
+  Petiole with 3 vascular bundles -\textgreater{} 13
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \tightlist
+  \item
+    Twigs square \ldots{} \emph{Phygelius}
+  \item
+    Twigs round -\textgreater{} 15
+  \end{enumerate}
+\item
+  Not net veined, weak 2 pinnate veins. Leaves with yellow blotches
+  above, petiole green \ldots{} \emph{Aucuba}
+\item
+  Net veined and strongly 3-pli-veined. No yellow blotches, petiole
+  reddish \ldots{} \emph{Viburnum}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{14}
+  \tightlist
+  \item
+    Young twigs brown, each leaf tooth with a fragile claw like gland
+    \ldots{} \emph{Euonymus}
+  \item
+    Young twigs green, leaf teeth without glands -\textgreater{} 17
+  \end{enumerate}
+\item
+  Leaves cuneate at base, buds with scales \ldots{} \emph{Rhamnus}
+\item
+  Leaves rounded at base, buds naked \ldots{} \emph{Phillyrea}
+\end{enumerate}
+
+Evergreen:
+
+TOOTHED LVS Aucuba - bt's 3, pith chambered with granular septa, scars
+slightly raised, large and crescent shaped
+
+Buddleja - stems 4 ridged, pith large, white and continuous, scars half
+round or triangular, small, bt 1. Stipule scars transversely connected
+Viburnum - bt's 3 or in groups of 3 with the middle bundles 2, pith
+continuous, leaf scars crescent shaped or angular v shaped Linnaea -
+leaf scars raised and shrivelled, single bt obscured Euonymus - scars
+small, elevated, bt 1 towards the top of the scar Phygelius - twigs
+square Rhamnus - pith rounded continuous and white, bt's 3 or in a
+transverse series, buds with scales Phillyrea - bt 1, scars crescent
+shaped
+
+LVS TERNATE Choisya - ! ENTIRE LVS Phlomis - Coprosma - Buxus - bt 1,
+leaf scars minute and crescent shaped, pith minute and cont. Twigs flat
+grooved between each pair of leaves Olearia Kalmia - bt's in a
+transverse line, scars half round or shield shaped, pith small and cont
+Calluna - scars opposite, minute, crescent shaped, bt 1, pith round cont
+Hebe - Viburnum - bt's 3 or in groups of 3 with the middle bundles 2,
+pith continuous, leaf scars crescent shaped or angular v shaped
+Ligustrum - pith moderate, white and homogenous, scars crescent shaped
+with bt 1 Lavandula - Rosmarinus - twigs 4 sided, leaf scars deeply u
+shaped, bt's 3 Hypericum - leaf scars triangular, 1 bt, pith spongey and
+finally excavated ?? Garrya - bt's 3, pith continuous, scars angularly
+u-shaped
+
+?? Hyssopus Satureja ?? Atriplex
+
+?? Helianthemum Thymus Loiseleuria Frankenia Herniaria Fuschia Weigela
+Kolkwitzia Phygelius Phillyrea ?? Akebia
+
+\hypertarget{key-4.3-deciduous-plants}{%
+\subsection{Key 4.3: Deciduous plants}\label{key-4.3-deciduous-plants}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Bundle trace 1 -\textgreater{} Key 4.3.1
+\item
+  Bundle traces \textgreater{}1 -\textgreater{} 5
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Bundle traces 3 -\textgreater{} Key 4.3.2
+  \item
+    Bundle traces \textgreater{}3 -\textgreater{} Key 4.3.3
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{key-4.3.1-bundle-trace-1}{%
+\subsubsection{Key 4.3.1: Bundle trace
+1}\label{key-4.3.1-bundle-trace-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Twigs green \ldots{} \emph{Euonymus}
+\item
+  Twigs not green when mature -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Trees -\textgreater{} 5
+  \item
+    Shrubs -\textgreater{} 9
+  \end{enumerate}
+\item
+  Terminal buds always present, buds felted brown, grey or black
+  \ldots{} \emph{Fraxinus}
+\item
+  Terminal buds absent -\textgreater{} 11
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Pith chambered, twigs densly hairy \ldots{} \emph{Paulownia}
+    (tomentosa)
+  \item
+    Pith solid, twigs red brown\ldots{} \emph{Metasequoia}
+    (glyptostryboides)
+  \end{enumerate}
+\item
+  Buds sometimes whorled in 3's\ldots{} \emph{Fuschia}
+\item
+  Buds strictly opposite -\textgreater{} 11
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \tightlist
+  \item
+    Pith present, solid, whitish -\textgreater{} 13
+  \item
+    Twigs hollow or chambered, brownish -\textgreater{} 15
+  \end{enumerate}
+\item
+  Buds mostly in pairs at twig apices, glandular ciliate with 6-7 scales
+  \ldots{} \emph{Syringa}
+\item
+  Buds singular at twig apices, ciliate with ± 4 pairs of opposite
+  scales \ldots{} \emph{Ligustrum}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{14}
+  \tightlist
+  \item
+    Buds \textgreater{}11 pairs of scales, twigs chambered to hollow
+    between nodes \ldots{} \emph{Forsythia}
+  \item
+    Buds \textless{}4 pairs of scales, or absent, twigs hollow but never
+    chambered -\textgreater{} 17
+  \end{enumerate}
+\item
+  Leaf scars mostly torn, partly connected by transverse ridges, buds
+  with keeled scales. Fruits white or red berries \ldots{}
+  \emph{Symphoricarpos}
+\item
+  Leaf scars never torn, triangularly lens shaped, not partly connected
+  by ridges, buds without scales \ldots{} \emph{Hypericum}
+\end{enumerate}
+
+\hypertarget{key-4.3.2-bundle-traces-3}{%
+\subsubsection{Key 4.3.2: Bundle traces
+3}\label{key-4.3.2-bundle-traces-3}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Transverse ridge not present between buds or leaf scars
+  -\textgreater{} 3
+\item
+  Transverse ridge present between buds or leaf scars, or leaf scars
+  abut -\textgreater{} 7
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Shoots thorny, buds with 8-10 dark brown scales, terminal buds
+    present\ldots{} \emph{Rhamnus} (cathartica)
+  \item
+    Shoots not thorny, buds red with one scale visible, terminal buds
+    absent\ldots{} \emph{Cercidiphyllum} (japonicum)
+  \end{enumerate}
+\item
+  Buds hidden behind leaf scar (which is like a thin membrane)\ldots{}
+  \emph{Philadelphus}
+\item
+  Buds exposed and obvious -\textgreater{} 7
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Buds naked -\textgreater{} 9
+  \item
+    Buds with scales -\textgreater{} 13
+  \end{enumerate}
+\item
+  Only terminal bud naked, twigs stout\ldots{} \emph{Hydrangea}
+\item
+  All buds naked -\textgreater{} 11
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \tightlist
+  \item
+    Twigs but especially buds with stellate hairs\ldots{}
+    \emph{Viburnum}
+  \item
+    Twigs and buds without stellate hairs but with medifixed
+    hairs\ldots{} \emph{Cornus}
+  \end{enumerate}
+\item
+  Stipule scars large and obvious\ldots{} \emph{Staphylea}
+\item
+  Stipule scars absent or not obvious -\textgreater{} 15
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{14}
+  \tightlist
+  \item
+    Buds with a pair of scales fused, enveloping bud, buds globose, red.
+    Or flowering in winter, fragrant\ldots{} \emph{Viburnum}
+  \item
+    Bud scales \textgreater{}2, not fused, not flowering in winter
+    -\textgreater{} 17
+  \end{enumerate}
+\item
+  Pith hollow between nodes -\textgreater{} 19
+\item
+  Pith solid, or spongey -\textgreater{} 23
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{18}
+  \tightlist
+  \item
+    Buds solitary, twigs green \ldots{} \emph{Leycesteria}
+  \item
+    Buds often superposed or collateral, twigs never green
+    -\textgreater{} 21
+  \end{enumerate}
+\item
+  Buds \textgreater{}3mm long, with buds often superposed\ldots{}
+  \emph{Lonicera}
+\item
+  Buds \textless{}3mm long, buds often collateral\ldots{}
+  \emph{Symphoricarpos}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{22}
+  \tightlist
+  \item
+    Twigs with 2-4 ridges decurrent from nodes. 2-valved capsules
+    persistent \ldots{} \emph{Weigela}
+  \item
+    Twigs without ridges decurrent from nodes, fruits rarely persistent
+    -\textgreater{} 25
+  \end{enumerate}
+\item
+  Bundle traces forming a line, fruits persistent, bristly with 5 lobed
+  calyx\ldots{}\emph{Kolkwitzia}
+\item
+  Bundle traces distinct, fruits not persistent, or if they are, not as
+  above -\textgreater{} 27
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{26}
+  \tightlist
+  \item
+    Pith spongey, twigs stout\ldots{} \emph{Sambucus}
+  \item
+    Pith solid, twigs more slender\ldots{} \emph{Acer}
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{key-4.3.3-bundle-traces-3}{%
+\subsubsection{Key 4.3.3: Bundle traces
+\textgreater{}3}\label{key-4.3.3-bundle-traces-3}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaf bases obscuring leaf scars -\textgreater{} 3
+\item
+  Leaf scars clearly present -\textgreater{} 5
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Twigs green, hollow\ldots{} \emph{Leycesteria} (formosana)
+  \item
+    Twigs red or purplish, solid\ldots{} \emph{Acer} (section Palmata)
+  \end{enumerate}
+\item
+  At least some nodes in whorls of 3 -\textgreater{} 7
+\item
+  Nodes strictly opposite -\textgreater{} 11
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Bundle traces \textgreater{}8 in an ellipse or horseshoe shape,
+    terminal bud absent -\textgreater{} 9
+  \item
+    Bundle traces \textless{} 7 (usually 3-5), terminal bud
+    present\ldots{} \emph{Hydrangea}
+  \end{enumerate}
+\item
+  Each node with one small leaf scar, and two large\ldots{}
+  \emph{Catalpa} (bignonioides)
+\item
+  Leaf scars all the same size\ldots{} \emph{Clerodendron} (trichotomum)
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \tightlist
+  \item
+    Large stipule scars between leaf scars\ldots{} \emph{Staphylea}
+    (pinnata)
+  \item
+    If stipule scars present, inconspicuous -\textgreater{} 13
+  \end{enumerate}
+\item
+  Trees -\textgreater{} 15
+\item
+  Shrubs -\textgreater{} 21
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{14}
+  \tightlist
+  \item
+    Terminal bud present, pith solid -\textgreater{} 17
+  \item
+    Terminal bud absent, pith chambered\ldots{} \emph{Paulownia}
+    (tomentosa)
+  \end{enumerate}
+\item
+  Bundle traces many in a closed circle, buds furry\ldots{}
+  \emph{Fraxinus}
+\item
+  Bundle traces \textless{}9, distinct, buds not furry but may be hairy
+  -\textgreater{} 19
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{18}
+  \tightlist
+  \item
+    Terminal buds \textgreater{}15mm, leaf scars large, shield
+    shaped\ldots{} \emph{Aesculus}
+  \item
+    Terminal buds \textless{} 15mm, leaf scars smaller, mostly crescent
+    shaped\ldots{} \emph{Acer}
+  \end{enumerate}
+\item
+  Terminal bud very large (15-20mm), naked\ldots{} \emph{Hydrangea}
+\item
+  Terminal bud smaller \textless{}15mm, often absent from shoots
+  -\textgreater{} 23
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{22}
+  \tightlist
+  \item
+    Pith wide, spongey, twigs stout \ldots{} \emph{Sambucus}
+  \item
+    Pith narrower, hard, more slender \ldots{} \emph{Acer}
+  \end{enumerate}
+\end{enumerate}
+
+Deciduous:
+
+Fuschia Weigela Kolkwitzia
+
+\begin{verbatim}
+Clerodendron - twigs obscurely 4 sided, pith large round white and continuous, buds superposed but lower often obscured by leaf scar, round ovoid. Leaf scars sometimes in whorls of three, elliptical, bt's 9 or aggregated in a U shaped series (?). No interpetiolar ridge.
+\end{verbatim}
+
+-- Clerodendron trichotomum
+
+\begin{verbatim}
+Paulownia - twigs stout, compressed at nodes. Pith large and chambered or hollowed between nodes. Buds superposed and sessile with 4 exposed blunt scales. Scars elliptical and more or less notched at the top. Bt's many in a near closed elliptical series. Without interpetiolar ridge.
+\end{verbatim}
+
+QA - Paulownia tomentosa
+
+\begin{verbatim}
+Rhamnus - pith rounded, continuous and white, scars small or more or less raised, bt's 3 or in a transverse series, buds small sessile (naked or scaled). No interpetiolar ridge
+\end{verbatim}
+
+OB - Rhamnus alaternus
+
+\begin{verbatim}
+Aesculus - pith large, 6 sided, pale. Upper most buds very large, half dozen exposed scales. leaf scars shield shaped or triangular, bundle traces 3 or in three groups. Weakly ridged between buds
+\end{verbatim}
+
+RG - Aesculus hippocastanum RG - Aesculus carnea RG - Aesculus indica
+
+\begin{verbatim}
+      Sambucus - twigs (6)8-10 sided, pith large, soft and continuous, buds with 3-5 pairs of scales, end bud mostly lacking. Scars crescent shaped, 3-4 sided large and transversely connected. Bundle traces 3,5,7. Interpetiolar ridge present
+\end{verbatim}
+
+SJ - ebulus SC - nigra SC - racemosa
+
+\begin{verbatim}
+Fraxinus - twigs stout, stiff, squarish and compressed at nodes. Buds sessile, superposed, 2-3 pairs of opposite scales, those of end bud often lobed. Bt's in a u-shaped series. Scars half round and broadly u shaped. Without interpetiolar ridge.
+\end{verbatim}
+
+SC - excelsior SC - angustifolium SC - ornus
+
+\begin{verbatim}
+Viburnum (lantana, opulus) - twigs more or less 6 sided, pith round to 6 sided, continuous. End bud naked and stellate scurfy (lantana) or scaled and stalked ovoid (opulus). Scars crescent shaped, bt's 3
+\end{verbatim}
+
+QA - opulus (interpetiolar ridge) OA - lantana (interpetiolar ridge)
+
+Leycesteria - soft wooded shrubs, twigs slender and round and pith
+excavated. Buds with 1-2 pairs of exposed scales, the outer attenuate.
+Leaf scars raised and minute so as to equal bud. Opposite scars connect
+in a cross line. Bt's 3. With interpetiolar ridge
+
+OA/LA - formosana
+
+\begin{verbatim}
+Cornus - twigs often bright coloured, round to 6 sided, pith white, continuous or soft or spongey. Buds stalked, oblong with a pair of valvate scales. Leaf scars raised and crescent shaped (raised on first winter on petiole bases). Bt's 3, leaf scars transversely joined. With interpetiolar ridge weak/absent
+\end{verbatim}
+
+LA - koenigii LA - mas LA - sanguinea LA - sericea
+
+\begin{verbatim}
+Deutzia -  twigs stellate pubescent, pith round, pale and spongey or brown and excavated between nodes (in our species yes). Buds with 2-6 pairs of scales. Scars triangular or transversely elongated and connected by transverse ridges. With interpetiolar ridge
+\end{verbatim}
+
+OA - scabra
+
+Philadelphus - twigs lined to hexagonal, buds with 2 valvate and hairy
+scales. Leaf scars half round with a thin membrane that covers the bud
+or crescent shaped when this is burst, connected transversely. Bt's 3.
+With interpetiolar ridge
+
+OA - coronarius OA - microphyllus
+
+Acer - twigs terete to six sided, pith round continuous and pale, buds
+with 2 to several pairs of scales, leaf scars U shaped bundle traces 3,
+5, 7, 9
+
+QA - campestre QA - cappadocicum RG/SC - negundo QA - platanoides QA -
+pseudoplatanus QA - saccharum
+
+Lonicera - twigs rounded, slender, bt's 3. With interpetiolar ridge
+
+LA - xylosteum LA - maackii LA - formosa LA - x purpusii LA - tatarica
+
+Hydrangea - pith large, continuous and pale, buds with 4-6 exposed
+scales, leaf scars crescent shaped, with connecting crossline. Bt's 3.
+With interpetiolar ridge
+
+OA - macrophylla
+
+*Euonymus - twigs characteristically green, pith round to 4 angled,
+greenish and spongey. Buds with 3-5 pairs of at first serrulate scales,
+scars small, half elliptical, somewhat elevated. Bt 1, transverse
+towards the top of the scar. No interpetiolar ridge.
+
+OB - latifolius OB - europaeus
+
+*Ligustrum - twigs rounded to 4 lined below the nodes, pith moderate
+white and homogenous, buds with 2-3 exposed scales. Leaf scars crescent
+shaped, raised and small. Bt 1. No interpetiolar ridge
+
+LB - vulgare LB - ovalifolium (mostly evergreen)
+
+*Forsythia - pith chambered to excavated, twigs moderately 4 sided. Buds
+with a dozen pairs of scales. Leaf scars shield shaped, small. Bt 1. No
+interpetiolar ridge
+
+OB - x intermedia
+
+*Symphoricarpos - small deciduous shrubs. Pith brownish, usually
+excavated, buds with about 3 pairs of keeled scales. Leaf scars small
+and mostly torn, raised and partly connected by transverse ridges, bt 1
+
+LA - albus LA -orbiculatus LA - x chenaultii
+
+\emph{Hypericum - twigs angled at least below the nodes, pith brown,
+spongey and finally excavated. Buds with 2 or several scarcely
+specialised scales. Scars triangularly lens shaped, bt 1 }Syringa -
+twigs moderate to slender, pith homogenous, buds with around 4 pairs of
+scales. Scars crescent or shield shaped. Bt 1 transverse and compound.
+No interpetiolar ridge.
+
+LB - vulgaris
+
+\begin{verbatim}
+      Staphylea - twigs moderate and rounded, glabrous. Pith large, continuous. Buds ovoid, glabrous 2 edged. Scars crescent shaped. Bt's 5 or 7. Stipule scars half round or elongated. With interpetiolar ridge.
+\end{verbatim}
+
+\hypertarget{key-5-leaves-or-leaf-scars-alternate}{%
+\section{Key 5: Leaves or leaf scars
+alternate}\label{key-5-leaves-or-leaf-scars-alternate}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Plants scrambling or climbing -\textgreater{} Key 5.1
+\item
+  Plants not as above -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Plants evergreen -\textgreater{} Key 5.2
+  \item
+    Plants deciduous -\textgreater{} Key 5.3
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{key-5.1-plants-scrambling-or-climbing}{%
+\subsection{Key 5.1: Plants scrambling or
+climbing}\label{key-5.1-plants-scrambling-or-climbing}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Plant with leaf opposed tendrils -\textgreater{} 3
+\item
+  Plant without tendrils -\textgreater{} 5
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Tendrils simple or forked and never thickened into pads, no
+    lenticels on twigs, buds smaller, subglobose \ldots{} \emph{Vitis}
+  \item
+    Tendrils branched 2 or more times and often thickened into pads,
+    lenticels on twigs, buds larger, round conical \ldots{}
+    \emph{Parthenocissus}
+  \end{enumerate}
+\item
+  Leaves evergreen -\textgreater{} 7
+\item
+  Leaves deciduous -\textgreater{} 9
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Stems with adventitious aerial roots, leaves lobed\ldots{}
+    \emph{Hedera}
+  \item
+    Without aerial adventitious roots, leaves almost always
+    entire\ldots{} \emph{Muehlenbeckia}
+  \end{enumerate}
+\item
+  Stipule (ochreae) scars encircling twigs, at least in older
+  twigs\ldots{} \emph{Fallopia}
+\item
+  Stipule scars absent -\textgreater{} 11
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \tightlist
+  \item
+    Buds absent\ldots{} \emph{Salpichroa} (rare)
+  \item
+    Buds present -\textgreater{} 13
+  \end{enumerate}
+\item
+  Buds superposed (one above another)\ldots{} \emph{Aristolochia}
+\item
+  Buds single at nodes -\textgreater{} 15
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{14}
+  \tightlist
+  \item
+    Bundle trace 1, buds with \textless{}\textless{} 12 scales
+    -\textgreater{} 17
+  \item
+    Bundle traces 6 or 3 at level of stem, buds with \textasciitilde{}12
+    mucronate scales\ldots{} \emph{Akebia}
+  \end{enumerate}
+\item
+  Twigs pale, inconspicuously 5 ridged, hard wooded scrambling shrub,
+  sometimes spiny\ldots{} \emph{Lycium}
+\item
+  Twigs darker, rounded, soft wooded twiner, never spiny. Frequently
+  with dried berries in panicles\ldots{} \emph{Solanum}
+\end{enumerate}
+
+\hypertarget{key-5.2-evergreen-plants}{%
+\subsection{Key 5.2: Evergreen plants}\label{key-5.2-evergreen-plants}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves simple -\textgreater{} 3
+\item
+  Leaves compound -\textgreater{} Key 5.2.1
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves entire -\textgreater{} Key 5.2.2
+  \item
+    Leaves toothed or lobed -\textgreater{} Key 5.2.3
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{key-5.2.1-leaves-compound}{%
+\subsubsection{Key 5.2.1: Leaves
+compound}\label{key-5.2.1-leaves-compound}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaflets with spiny margins\ldots{} \emph{Mahonia}
+\item
+  Leaflets without spiny margins -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves 1-pinnate\ldots{} \emph{Coronilla}
+  \item
+    Leaves \textgreater{} 1 pinnate\ldots{} \emph{Acacia}
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{key-5.2.2-leaves-entire}{%
+\subsubsection{Key 5.2.2: Leaves entire}\label{key-5.2.2-leaves-entire}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Tree or tall shrub \textgreater{}1.2m -\textgreater{} 3
+\item
+  Low growing shrub \textless{}1.2m, prostrate, erect or mat forming
+  -\textgreater{} 35
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Leaves with peltate scales or stellate hairs -\textgreater{} 5
+  \item
+    Leaves without peltate scales or stellate hairs -\textgreater{} 9
+  \end{enumerate}
+\item
+  Peltate scales present -\textgreater{} 7
+\item
+  Peltate scales absent, stellate hairs present. Leaves spine tipped
+  when young -\textgreater{} \emph{Quercus}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Leaves strongly net veined\ldots{} \emph{Olearia}
+  \item
+    Leaves not strongly net veined\ldots{}\emph{Eleagnus}
+  \end{enumerate}
+\item
+  Stipules modified into spines (in leaf axils), wood yellow
+  underneath\ldots{} \emph{Berberis}
+\item
+  Spines not present -\textgreater{} 11
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \tightlist
+  \item
+    Leaves white felted or woolly beneath -\textgreater{} 13
+  \item
+    Leaves never white felted -\textgreater{} 15
+  \end{enumerate}
+\item
+  Leaves white felted, buds naked\ldots{} \emph{Brachyglottis}
+\item
+  Leaves short woolly below, bud with several scales\ldots{}
+  \emph{Pittosporum}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{14}
+  \tightlist
+  \item
+    Petiole with sheathing base on stem, twigs yellowish green\ldots{}
+    \emph{Griselinia}
+  \item
+    Petiole never sheathing, twigs green or brown -\textgreater{} 17
+  \end{enumerate}
+\item
+  Twigs and leaves with almond odour when crushed\ldots{}
+  \emph{Photinia}
+\item
+  Not with an almond odour -\textgreater{} 19
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{18}
+  \tightlist
+  \item
+    Leaves bay scented\ldots{} \emph{Laurus}
+  \item
+    Leaves not bay scented -\textgreater{} 21
+  \end{enumerate}
+\item
+  Leaves dotted with translucent glands\ldots{} \emph{Skimmia}
+\item
+  Leaves never with translucent glands -\textgreater{} 23
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{22}
+  \tightlist
+  \item
+    Leaves sessile\ldots{} \emph{Bupleurum}
+  \item
+    Petiole present -\textgreater{} 25
+  \end{enumerate}
+\item
+  Leaves spine tipped at apex\ldots{} \emph{Ilex}
+\item
+  Leaves never spine tipped -\textgreater{} 27
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{26}
+  \tightlist
+  \item
+    Leaves sivery due to crystalline cells on both sides\ldots{}
+    \emph{Atriplex}
+  \item
+    Leaves never silvery -\textgreater{} 29
+  \end{enumerate}
+\item
+  Twigs hairless -\textgreater{} 31
+\item
+  Twigs hairy (look closely) -\textgreater{} 33
+\item
+  Leaves much larger \textgreater{} 8cm long\ldots{} \emph{Rhododendron}
+\item
+  Leaves smaller \textless{} 7cm\ldots{} \emph{Pittosporum}
+\item
+  Leaves in pseudowhorls at twig apex leading to bunched leaf scars from
+  last years growth, twig hairs not S-shaped at base. Stipules
+  absent\ldots{} \emph{Pittosporum}
+\item
+  Leaves never in pseudowhorls, twig hairs S-shaped at base, stipules
+  present and soon falling\ldots{} \emph{Cotoneaster} 35 (2). Leaves
+  revolute at least when young, often strongly revolute at maturity
+  -\textgreater{} 37
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{35}
+  \tightlist
+  \item
+    Leaves with flat margins, not revolute when young -\textgreater{} 47
+  \end{enumerate}
+\item
+  Leaves hairless -\textgreater{} 39
+\item
+  Leaves hairy -\textgreater{} 45
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{38}
+  \tightlist
+  \item
+    Leaves strongly revolute, cylindrical, glandular ciliate only when
+    young \ldots{} \emph{Empetrum}
+  \item
+    Leaves weakly revolute -\textgreater{} 41
+  \end{enumerate}
+\item
+  Leaves gland dotted below\ldots{} \emph{Vaccinium}
+\item
+  Leaves not gland dotted below -\textgreater{} 43
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{42}
+  \tightlist
+  \item
+    Stems \textgreater{}1mm diameter, not rooting at nodes\ldots{}
+    \emph{Andromeda}
+  \item
+    Stems \textless{}1mm diameter, rooting at nodes\ldots{}
+    \emph{Vaccinium}
+  \end{enumerate}
+\item
+  Leaves orange woolly below\ldots{} \emph{Rhododendron} (subgenus
+  Ledum)
+\item
+  Leaves white woolly below\ldots{} \emph{Daboecia}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{46}
+  \tightlist
+  \item
+    Stipules or stipule scars present\ldots{} \emph{Cotoneaster}
+    (Herniaria keys out here if evergreen, but apparently alternate
+    leaved due to one leaf smaller or aborted)
+  \item
+    Stipules absent -\textgreater{} 49
+  \end{enumerate}
+\item
+  Leaves fleshy -\textgreater{} 51
+\item
+  Leaves not fleshy -\textgreater{} 55
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{50}
+  \tightlist
+  \item
+    Leaves cylindrical, or nearly so -\textgreater{} 53
+  \item
+    Leaves flat, green\ldots{} \emph{Sedum}
+  \end{enumerate}
+\item
+  Leaves glaucous\ldots{} \emph{Suaeda}
+\item
+  Leaves green\ldots{} \emph{Artemisia}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{54}
+  \tightlist
+  \item
+    Leaves ± linear\ldots{} \emph{Iberis}
+  \item
+    Leaves more obovate -\textgreater{} 57
+  \end{enumerate}
+\item
+  Leaves \textgreater{}5cm\ldots{} \emph{Daphne}
+\item
+  Leaves \textless{}3cm -\textgreater{} 59
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{58}
+  \tightlist
+  \item
+    Leaves strongly net veined\ldots{} \emph{Arctostaphylos}
+  \item
+    Leaves not net veined, very rare\ldots{} \emph{Diapensia}
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{key-5.2.3-leaves-toothed-or-lobed}{%
+\subsubsection{Key 5.2.3: Leaves toothed or
+lobed}\label{key-5.2.3-leaves-toothed-or-lobed}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves toothed -\textgreater{} 3
+\item
+  Leaves lobed -\textgreater{} 39
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Branches spiny or thorny -\textgreater{} 5
+  \item
+    Branches unarmed -\textgreater{} 7
+  \end{enumerate}
+\item
+  Spines at stem nodes, leaves spine toothed\ldots{} \emph{Berberis}
+\item
+  Spines at ends of branches, leaves not spine toothed\ldots{}
+  \emph{Pyracantha} (coccinea)
+\item
+  Low shrub \textless{} 60cm tall -\textgreater{} 9
+\item
+  Large shrub or tree -\textgreater{} 17
+\item
+  Leaves strongly net veined -\textgreater{} 11
+\item
+  Leaves not net veined -\textgreater{} 13
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \tightlist
+  \item
+    Leaves \textless{}3cm long, white woolly below, buds without
+    scales\ldots{} \emph{Dryas} (octopetala)
+  \item
+    Leaves \textgreater{}5cm long, not white woolly below, buds with
+    scales\ldots{} \emph{Gaultheria} (shallon)
+  \end{enumerate}
+\item
+  Leaves gland pitted below\ldots{} \emph{Vaccinium} (vitis-idaea)
+\item
+  Leaves not gland pitted below -\textgreater{} 15
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{14}
+  \tightlist
+  \item
+    Leaves few and clustered at stem apices\ldots{} \emph{Gaultheria}
+    (procumbens)
+  \item
+    Leaves many and distributed along stems\ldots{} \emph{Phyllodoce}
+    (caerulea)
+  \end{enumerate}
+\item
+  Plant with peltate scales\ldots{} \emph{Eleagnus} (macrophylla)
+\item
+  Without peltate scales -\textgreater{} 19
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{18}
+  \tightlist
+  \item
+    Plant with stellate hairs, buds clustered at leaf apices\ldots{}
+    \emph{Quercus}
+  \item
+    Plant without stellate hairs -\textgreater{} 21
+  \end{enumerate}
+\item
+  Leaves white hairy below -\textgreater{} 23
+\item
+  Leaves not white hairy below -\textgreater{} 25
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{22}
+  \tightlist
+  \item
+    Young twigs white felted\ldots{} \emph{Brachyglottis} (x jubar)
+  \item
+    Young twigs brown\ldots{} \emph{Olearia} (macrodonta)
+  \end{enumerate}
+\item
+  Leaves at least at apex, spiny -\textgreater{} 27
+\item
+  Leaves not spiny -\textgreater{} 29
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{26}
+  \tightlist
+  \item
+    Twigs green, leaves \textgreater{}3cm, tree\ldots{} \emph{Ilex}
+  \item
+    Twigs reddish, leaves \textless{}3cm, shrub\ldots{}
+    \emph{Gaultheria}
+  \end{enumerate}
+\item
+  (Young) twigs with glandular hairs or reddish bristly hairs
+  -\textgreater{} 31
+\item
+  (Young) twigs not glandular hairy or bristly -\textgreater{} 35
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{30}
+  \tightlist
+  \item
+    Leaves aromatic with glands below\ldots{} \emph{Escallonia}
+    (macrantha)
+  \item
+    Leaves not aromatic, no glands below -\textgreater{} 33
+  \end{enumerate}
+\item
+  Tall shrub to 5m, leaves cuneate at base\ldots{} \emph{Arbutus}
+  (unedo)
+\item
+  Shrub to 1.5m, leaves rounded to cordate at base\ldots{}
+  \emph{Gaultheria} (shallon)
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{34}
+  \tightlist
+  \item
+    Young twigs hairy -\textgreater{} 37
+  \item
+    Young twigs hairless\ldots{} \emph{Prunus}
+  \end{enumerate}
+\item
+  Leaves \textless{}5m long\ldots{} \emph{Rhamnus} (alaternus)
+\item
+  Leaves \textgreater{}7cm long\ldots{} \emph{Leucothoe} (fontanesia) 39
+  (2). Leaves with stellate hairs -\textgreater{} 41
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{39}
+  \tightlist
+  \item
+    Leaves with simple hairs, or hairless -\textgreater{} 43
+  \end{enumerate}
+\item
+  Stellate hairs both sides\ldots{} \emph{Lavatera}
+\item
+  Stellate hairs below only\ldots{} \emph{Quercus}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{42}
+  \tightlist
+  \item
+    Leaves \textgreater{}90cm, divided to base in 30-40 lobes, in
+    terminal crown, trunk covered in petiole bases. Palm\ldots{}
+    \emph{Trachycarpus} (fortunei)
+  \item
+    Leaves \textless{}10cm, not as above -\textgreater{} 45
+  \end{enumerate}
+\item
+  Leaves white woolly on one or both sides -\textgreater{} 47
+\item
+  Leaves not woolly or velvety, leaves to 25cm, palmately lobed\ldots{}
+  \emph{Fatsia} (japonica)
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{46}
+  \tightlist
+  \item
+    Leaves white woolly all over, pinnately lobed, aromatic. Plant not
+    rooting at nodes\ldots{} \emph{Santolina} (chamaecyparissus)
+  \item
+    Leaves white woolly below only -\textgreater{} 49
+  \end{enumerate}
+\item
+  Leaves to 12cm, ovate, with translucent dots\ldots{} \emph{Rubus}
+  (tricolor)
+\item
+  Leaves \textless{}2cm, oblong, no translucent dots\ldots{}
+  \emph{Dryas} (octopetala)
+\end{enumerate}
+
+\hypertarget{key-5.3-deciduous-plants}{%
+\subsection{Key 5.3: Deciduous plants}\label{key-5.3-deciduous-plants}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Twigs with spines, prickles or thorns -\textgreater{} Key 5.3.1
+\item
+  Twigs unarmed -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Buds with bud scales -\textgreater{} 5
+  \item
+    Buds without bud scales, or buds hidden/obscured -\textgreater{} Key
+    5.3.2
+  \end{enumerate}
+\item
+  Leaf scars with 3 bundle traces, or in 3 distinct groups
+  -\textgreater{} 7
+\item
+  Leaf scars not with 3 bundle traces, or leaf scars and bundle traces
+  obscured/absent -\textgreater{} 9
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Terminal buds present -\textgreater{} Key 5.3.3
+  \item
+    Terminal buds absent -\textgreater{} Key 5.3.4
+  \end{enumerate}
+\item
+  Terminal buds present -\textgreater{} Key 5.3.5
+\item
+  Terminal buds absent -\textgreater{} Key 5.3.6
+\end{enumerate}
+
+\hypertarget{key-5.3.1-twigs-with-spines-prickles-or-thorns}{%
+\subsubsection{Key 5.3.1: Twigs with spines, prickles or
+thorns}\label{key-5.3.1-twigs-with-spines-prickles-or-thorns}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Plant with prickles or spines -\textgreater{} 3
+\item
+  Plant with thorns -\textgreater{} 13
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Plants with spines, occurring beneath each bud at each node
+    -\textgreater{} 5
+  \item
+    Plants without spines, but with prickles on stems -\textgreater{} 9
+  \end{enumerate}
+\item
+  1 or 3(+) spines at each node -\textgreater{} 7
+\item
+  2 spines at each node, flattened lengthwise and buds concealed beneath
+  leaf scar\ldots{} \emph{Robinia}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Leaf scars many on short shoots beneath bud, wood bright yellow
+    beneath\ldots{} \emph{Berberis}
+  \item
+    Leaf scars singular and distinct above spines\ldots{} \emph{Ribes}
+    (uva-crispa)
+  \end{enumerate}
+\item
+  Twigs extremely stout, leaf scars half encircling twig with
+  \textasciitilde{}15 bundle traces in a line\ldots{} \emph{Aralia}
+  (elata)
+\item
+  Not as above, bundle traces 3, if visible -\textgreater{} 11
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \tightlist
+  \item
+    Plant with persistant petiole base, where leaf has torn off\ldots{}
+    \emph{Rubus}
+  \item
+    Leaf scars present, almost linear\ldots{} \emph{Rosa} 13 (2). Twigs
+    with peltate scales -\textgreater{} 15
+  \end{enumerate}
+\item
+  Twigs never with peltate scales -\textgreater{} 17
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{14}
+  \tightlist
+  \item
+    Twigs without terminal buds, grey to bronze brown scales\ldots{}
+    \emph{Hippophae} (rhamnoides)
+  \item
+    Twigs with terminal buds (in at least some twigs), olive brown to
+    silver scales\ldots{} \emph{Eleagnus} (umbellatus)
+  \end{enumerate}
+\item
+  Twigs never with terminal buds -\textgreater{} 19
+\item
+  Twigs with terminal buds -\textgreater{} 21
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{18}
+  \tightlist
+  \item
+    Buds mostly lateral to thorns\ldots{} \emph{Chaenomeles}
+  \item
+    Buds, often many, on thorns themselves. (something about collateral
+    buds?)\ldots{} \emph{Prunus} (spinosa) {[}{[}21. Thorns not very
+    sharp\ldots{} \emph{Malus}
+  \end{enumerate}
+\item
+  Thorns sharp -\textgreater{} 23
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{22}
+  \tightlist
+  \item
+    Twigs densly long, patent hairy\ldots{} \emph{Mespilus} (germanica)
+  \item
+    Twigs not hairy or adpressed hairy -\textgreater{} 25
+  \end{enumerate}
+\item
+  Buds purplish, acute\ldots{} \emph{Pyrus}
+\item
+  Buds rounded, reddish\ldots{} \emph{Crataegus}{]}{]} IMPROVE. FIND
+  BUDS.
+\end{enumerate}
+
+\hypertarget{key-5.3.2-buds-without-bud-scales-or-buds-hidden.}{%
+\subsubsection{Key 5.3.2: Buds without bud scales, or buds
+hidden.}\label{key-5.3.2-buds-without-bud-scales-or-buds-hidden.}}
+
+\begin{verbatim}
+    Buds without bud scales, or buds at least partly obscured
+        With terminal buds
+            LABURNUM
+            RHAMNUS (FRANGULA)
+            PARROTIA 
+            PTEROCARYA
+            JUGLANS
+
+        Without terminal buds
+            RHUS - leaf scar small and almost encircling bud. Buds with long hairs, blunt conical. Twigs hairy and with milky sap. Pith ochre yellow. Bundle traces 3.
+            ROBINIA - leaf scar large, buds covered initially by a membrane, twigs angled. Bundle traces 3.
+            BUDDLEJA (ALTERNIFOLIA) - deciduous, soft wooded shrubs, stems 4 ridged. Twigs almost hairless, but with some stellate hairs (and buds). 1 pair of exposed scales. Bundle trace 1.
+            COTONEASTER - shrubs to small trees, twigs rounded. Pith continuous. Bundle trace 1, indistinct, stipules mostly persistent
+            SPARTIUM - twigs green, elongated, striate ridged. Pith continuous. Buds shorter than elongated leaf cushion. Leaf scars minute and bundle trace 1.
+            GENISTA? - twigs green, ribbed or grooved. Pith continuous. Buds small, solitary, sessile and ovoid ~6 scales. BT 1.
+            CYTISUS - twigs green, terete, ribbed or grooved. Pith continuous. Buds small with ~4 scales, often hidden behind leaf scars. Bundle traces 1. Stipules or stipule scars at the top of the leaf cushion.
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Terminal buds present -\textgreater{} 3
+\item
+  Terminal buds absent -\textgreater{} 11
+\item
+  Pith chambered -\textgreater{} 5
+\item
+  Pith continuous -\textgreater{} 7
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{4}
+  \tightlist
+  \item
+    Terminal bud leaves spreading, \textgreater{}15mm long\ldots{}
+    \emph{Pterocarya} (fraxinifolia)
+  \item
+    Terminal bud leaves compact, \textless{}15mm long\ldots{}
+    \emph{Juglans}
+  \end{enumerate}
+\item
+  Twigs with at least some stellate hairs, buds dark brown\ldots{}
+  \emph{Parrotia} (persica)
+\item
+  Twigs never with stellate hairs -\textgreater{} 9
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{8}
+  \tightlist
+  \item
+    Stipules persistent on large leaf cushions, buds silvery
+    hairy\ldots{} \emph{Laburnum}
+  \item
+    Stipules minute, if present, buds densely brown
+    hairy\ldots{}\emph{Rhamnus} (frangula)
+  \end{enumerate}
+\end{enumerate}
+
+11 (2). Buds obscured, either by remains of leaf bases or by a membrane
+-\textgreater{} 13 12. Buds entirely unobscured -\textgreater{} 19 13.
+Buds obscured by a membrane, later splitting. Bundle traces 3\ldots{}
+\emph{Robinia} (pseudo-acacia) 14. Buds obscured by leaf bases, bundle
+trace 1 -\textgreater{} 15 15. Twigs finely striated, rush like\ldots{}
+\emph{Spartium} (junceum) 16. Twigs angled winged, or grooved
+-\textgreater{} 17 17. Twigs 5 angled or winged\ldots{} \emph{Cytisus}
+18. Twigs furrowed with \textgreater{}5 angles, the slender twigs 4
+angled\ldots{} \emph{Genista} (CHECK) 19. Stems 4 ridged, with some
+stellate hairs\ldots{} \emph{Buddleja} 20. Stems not 4 ridged
+-\textgreater{} 21 21. Leaf scar almost encircling the bud. Stipules
+absent. Twigs very hairy with milky sap. Bundle traces 3\ldots{}
+\emph{Rhus} 22. Leaf scar tiny, not encircling bud. Stipules mostly
+persistent. Twigs hairy or not, no sap. Bundle trace 1\ldots{}
+\emph{Cotoneaster}
+
+\hypertarget{key-5.3.3-leaf-scars-with-3-bundle-traces-terminal-buds-present.}{%
+\subsubsection{Key 5.3.3: Leaf scars with 3 bundle traces, terminal buds
+present.}\label{key-5.3.3-leaf-scars-with-3-bundle-traces-terminal-buds-present.}}
+
+(buds), (leaf scars), (twigs)
+
+\begin{verbatim}
+With three bundle traces
+    Buds with bud scales
+        With terminal buds
+        JUGLANS - lateral buds often superposed, blunt to acute with broad. Bud scales thin and scaly, rounded at tip. Leaf scars large and as broad as twig, often ± 3 lobed, with 3 groups of semi circular traces. Twigs thick, slightly angular, hairless.
+        ALNUS - lateral buds spiral in 1/3 divergence. First bud scale turned towards the stem (adaxial). Buds stalked. Number and shape of bundle traces variable and leaf scars too. Twigs and pith often 3 angular. Infructescences are persistent and cone like.
+        BETULA - only short shoots with terminal buds, with 5-8 scales on lateral short shoots and 3-5 scales on lateral buds.
+        STACHYURUS - buds dimorphic. inflorescence branches well developed in racemes. Terminal buds ~3mm long, laterals 2mm. 2-3 outer bud scales. Leaf scars with 3 traces, central larger, laterals less distinct. Twigs slender, glabrous, red to olive brown, long and curving down.
+        PRUNUS - usually ~6 exposed scales, buds collaterally multiple, elongated ovoid or conical. Terminal buds present (cherries, almonds, peaches) or absent (apricots,plums and sloes). Bundle traces 3, minute, scars half round, elliptical. Pith pale or brown, solid. May have to key out last...
+        RIBES - buds scales spiral , simple, rather loose, acute, short stalked. Bark shedding. Leaf scars u shaped or broadly crescent shaped. Twigs solid to spongey, decurrently ridged from nodes 
+        ARONIA - red buds, long acute terminal bud, oblong, flattened and appressed. 5 abruptly pointed glandular denticulate scales. Leaf scars u shaped, low. Twigs with solid pith.
+        FAGUS - buds long fusiform with scales in 4 rows (decussate), divergent and oblique over leaf scars, >10 scales. Leaf scars half round, small, bundle traces 3. Stipular scars almost encircling twig. Twigs, slender, zig-zag, round.
+        POPULUS - buds dimorphic. Terminal buds surrounded by adaxial stipule scales in a spiral. Lateral buds the first bud scale is opposite the principal axis (i.e lowermost bud scale immediately over leaf scar), leaf scar mostly broadly crescent shaped to triangular, twigs rounded, rarely 5 angled.
+        AMELANCHIER - buds elongated with half a dozen scales (sometimes more), reddish, acute. Leaf scars narrowly crescent/U shaped. Twigs slender, zig-zag.
+        COTINUS - buds bluish-white with waxy bloom, two valvate bud scales. Leaf scars crescent shaped to 3 lobed. Twigs with yellow wood when scratched, with lenticels, hairless, with waxy bloom too.
+        MESPILUS - Buds acute ovoid with >6 bud scales, ciliate. Leaf scars small, dark, crescent shaped and indistinctly 3 traced. Twigs towards the tip densly spreading hairy.
+        PYRUS - terminal buds of long shoots are more densly hairy. Basal bud scales of terminal buds acute and keeled. Short shoots with terminal buds. Leaf scars small, blackish. Twigs mostly glabrous.
+        MALUS - unsatisfactory at present...
+        LABURNUM - bud scales very silver hairy, terminal 3-4mm long. Leaf scar with stipule remains at base, transversely elliptical with 3 bundle traces. Short and long shoots present. Twigs slender, slightly fluted. Pith solid, white.
+        LIQUIDAMBAR - buds ovoid, acute with 5-6 bud scales, glossy, reddish with thin ciliate margins. Leaf scars half elliptical, little raised on cushions, with 3 bundle traces. Twigs sometimes with corky ridges, somewhat angled, pith solid, star shaped.
+        DAVIDIA - buds acute ovoid, with round base, glossy dark wine red with up to 6 scales. Leaf scars half elliptical to 3 lobed with 3 bundle traces. Twigs hairless, thick, little zig-zag and pith solid with firmer plates at intervals.
+        SORBUS - buds variable, sub conical or oblong (globose in torminalis), with terminal buds larger than laterals with inner scales with many hairs and matted with gum, or hairless, bud scales often with a brown margin. Leaf scars with 3 or 5 bundle traces. Leaf cushions different colour to twigs(?).
+        The Sorbus species with 3 bundle traces are:
+          Sorbus torminalis - green, glossy bud scales with brown margins, terminal bud blunt (terminal buds 6mm)
+          Sorbus aria (agg) - Woolly buds, green with brown margin (terminal buds 10mm)
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Pith chambered\ldots{} \emph{Juglans}
+\item
+  Pith not chambered -\textgreater{} 3
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Flower buds numerous on elongated racemes (hortal)\ldots{}
+    \emph{Stachyurus} (praecox)
+  \item
+    Flower buds if present, different -\textgreater{} 5
+  \end{enumerate}
+\item
+  Lateral buds short to long stalked -\textgreater{} 7
+\item
+  Lateral buds sessile -\textgreater{} 9
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Tree. Lateral buds long stalked, with 2(3) valvate scales\ldots{}
+    \emph{Alnus}
+  \item
+    Small shrub. Lateral buds short stalked, with \textgreater{}5
+    scales\ldots{} \emph{Ribes}
+  \end{enumerate}
+\item
+  Trunk and boughs of tree with transverse stripes. Buds often
+  collateral\ldots{} \emph{Prunus}
+\item
+  Not as above -\textgreater{} 11
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \tightlist
+  \item
+    Only short shoots with terminal buds (5-8 scaled), lateral buds 3-5
+    scaled\ldots{} \emph{Betula}
+  \item
+    Either long shoots or both long and short shoots with terminal buds
+    -\textgreater{} 13
+  \end{enumerate}
+\item
+  Buds clearly dimorphic. Terminal buds: spiral bud scales, lateral
+  buds: distichous scales with lowest above leaf scar\ldots{}
+  \emph{Populus}
+\item
+  Buds similar (terminal buds may be larger), or not as above
+  -\textgreater{} 15
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{14}
+  \tightlist
+  \item
+    Terminal buds elongated, slender, acute -\textgreater{} 17
+  \item
+    Terminal buds less elongate, more squat -\textgreater{} 21
+  \end{enumerate}
+\item
+  Buds divergent, oblique over leaf scars. \textgreater{}10 bud scales
+  exposed\ldots{} \emph{Fagus}
+\item
+  Bud more appressed to twig, \textless{}10 bud scales exposed
+  -\textgreater{} 19
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{18}
+  \item
+    5 or fewer glandular denticulate scales on buds\ldots{}
+    \emph{Aronia}
+  \item
+    \begin{quote}
+    5 scales on buds\ldots{} \emph{Amelanchier}
+    \end{quote}
+  \end{enumerate}
+\item
+  Bud scales 2, valvate. Twigs pruinose, wood yellow\ldots{}
+  \emph{Cotinus} (coggyria)
+\item
+  Bud scales \textgreater{}2, twigs not pruinose, wood not yellow
+  -\textgreater{} 23
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{22}
+  \tightlist
+  \item
+    Twigs hairy -\textgreater{} 25
+  \item
+    Twigs hairless -\textgreater{} 33
+  \end{enumerate}
+\item
+  Stipules persistent on leaf scar cushion. Buds densly silver
+  hairy\ldots{} \emph{Laburnum}
+\item
+  Stipules not persistent on leaf scar cushion -\textgreater{} 27
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{26}
+  \tightlist
+  \item
+    Buds with at least some white hairs -\textgreater{} 29
+  \item
+    Buds with hairs not white or absent -\textgreater{} 35
+  \end{enumerate}
+\item
+  Bud scales green with brown margin, buds raised on petiole base
+  differently coloured to rest of twig\ldots{} \emph{Sorbus}
+\item
+  Not as above -\textgreater{} 31
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{30}
+  \tightlist
+  \item
+    Lateral buds appresssed\ldots{} \emph{Malus}
+  \item
+    Lateral buds spreading -\textgreater{} 33
+  \end{enumerate}
+\item
+  Leaf scars raised equal to bud width, terminal bud larger to
+  12mm\ldots{} \emph{Pyrus} and \emph{Malus}
+\item
+  Leaf scars raised, \textgreater{} bud width, spreading hirsute to twig
+  apex, terminal bud to 6mm\ldots{} \emph{Mespilus}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{34}
+  \tightlist
+  \item
+    Buds with golden hairs at tip, otherwise brown, acute
+    conical\ldots{} \emph{Pyrus}
+  \item
+    Buds mostly hairless, buds either glossy or sticky -\textgreater{}37
+  \end{enumerate}
+\item
+  Buds shiny dark purple, twigs with indisinct white partitions\ldots{}
+  \emph{Davidia}\\
+\item
+  Buds sticky, green to brown. Pith 5 angled, not partitioned\ldots{}
+  \emph{Liquidambar}
+\end{enumerate}
+
+\hypertarget{key-5.3.4-leaf-scars-with-3-bundle-traces-terminal-buds-absent}{%
+\subsubsection{Key 5.3.4: Leaf scars with 3 bundle traces, terminal buds
+absent}\label{key-5.3.4-leaf-scars-with-3-bundle-traces-terminal-buds-absent}}
+
+\begin{verbatim}
+  TILIA - bud scales 2(3), mostly green or red glistening. Leaf scars 2 ranked on shoots, stipule scars with one of the pair much elongated, bundle traces 3 or compound and then scattererd. Twigs zig-zag, pith solid.
+        BETULA - only short shoots with terminal buds, with 5-8 scales on lateral short shoots and (2)3-5 scales on lateral buds. Leaf scars 2 ranked, half elliptical, small, bundle traces 3, stipule scars narrow. Twigs, slender, zig-zag, round, pith minute, 3 sided, solid.
+        CYDONIA - buds with 1-2 exposed bud scales, appressed. Leaf scars small, shallow, u shaped, bundle traces 3, stipule scars small and elongated. Twigs gray woolly, pith small, solid.
+        ULMUS - buds solitary, ovoid, oblique to leaf scar, bud scales ~6, 2 ranked. Leaf scars 2 ranked, broadly crescent shaped or half round, bundle traces 3 or in 3 groups, stipule scars unequal. Twigs slender, zig-zag, rounded, pith solid.
+        CORYLUS - buds with 4-6 scales, obliquely sessile. Leaf scars 2 ranked anf half round/ triangular, bundle traces 3 or multiplied and obscure. 
+        CARPINUS -
+        OSTRYA -
+        BACCHARIS -
+        MYRICA -
+        COLUTEA -
+        KERRIA -
+        SORBARIA -
+        PRUNUS -
+        RHAMNUS -
+        SALIX -
+    
+\end{verbatim}
+
+\hypertarget{key-5.3.5}{%
+\subsubsection{Key 5.3.5}\label{key-5.3.5}}
+
+\begin{verbatim}
+        GINGKO
+        TAXODIUM
+        LARIX
+        DAPHNE
+        RHODODENDRON
+        DAPHNE
+        ELAEGNUS
+        FICUS
+        LIRIODENDRON
+        MAGNOLIA
+        ALNUS
+        SORBUS
+        FAGUS
+        PAEONIA
+        QUERCUS
+        POTENTILLA
+\end{verbatim}
+
+\hypertarget{key-5.3.6}{%
+\subsubsection{Key 5.3.6}\label{key-5.3.6}}
+
+\begin{verbatim}
+        NOTHOFAGUS
+        TAMARIX
+        MORUS
+        PLATANUS
+        CASTANEA
+        TILIA
+        AILANTHUS
+        GENISTA
+        CYTISUS
+        TAXODIUM
+        SPIRAEA
+        HIPPOCREPIS
+        COTONEASTER
+        POTENTILLA
+\end{verbatim}
+
+Lvs simple
+
+\begin{verbatim}
+K = Simple, entire, alt (only helpful for evergreen taxa)
+N = Simple, toothed, alt (only helpful for evergreen taxa)
+\end{verbatim}
+
+TWIGS, PITH, BUDS, LEAF SCARS, BT'S
+
+Olearia -
+
+KA - paniculata \#EVERGREEN - leaves with peltate scales, entire,
+alternate. Net veined. Unarmed NC - macrodonta \#EVERGREEN - leaves
+without peltate scales, toothed, alterate. Net veined. Twigs brown,
+angled. Upturned spine like teeth on leaves
+
+Eleagnus
+
+KA - umbellata \#EVERGREEN NB, NC - macrophylla
+
+Hippophae
+
+KA - rhamnoides
+
+Quercus
+
+KA - ilex \#EVERGREEN NC, ND, PA - suber, ilex \#EVERGREEN PA - cerris
+PA - robus PA - petraea PA - rubra PA - coccinea
+
+Buddleja
+
+KA - alternifolia
+
+Cotoneaster
+
+KB - many species SOME \#EVERGREEN
+
+Frangula
+
+KB - alnus
+
+Salix
+
+KB - many KF
+
+Photinia
+
+KB - davidiana \#EVERGREEN
+
+Cydonia
+
+KB - oblonga
+
+Fagus
+
+KB - sylvatica
+
+Pyrus
+
+KB - salicifolius
+
+Brachyglottis
+
+KB, NC - x jubar \#EVERGREEN
+
+Rhododendron
+
+KB - ponticum \#EVERGREEN KB, NF - luteum
+
+Pittosporum
+
+KB - tobira \#EVERGREEN KB - tenuifolium \#EVERGREEN KC - crassifolium
+\#EVERGREEN
+
+Berberis
+
+KB - many sp
+
+Laurus
+
+KB - nobilis \#EVERGREEN
+
+Bupleurum
+
+KB - fruticosum \#EVERGREEN
+
+Vaccinium
+
+KB, NF - corymbosum
+
+Cotinus
+
+KB - coggyria
+
+Skimmia
+
+KC - japonica \#EVERGREEN
+
+Atriplex
+
+KC - halimus \#EVERGREEN
+
+Ilex
+
+KC, ND - x altaclerensis \#EVERGREEN ND - aquifolium \#EVERGREEN
+
+Griselinia
+
+KC - littoralis \#EVERGREEN
+
+Tamarix
+
+KC - gallica KC - africana
+
+Lycium
+
+KC - barbarum KC - chinense
+
+Berberis
+
+BER - many species SOME \#EVERGREEN
+
+Spartium
+
+KC - junceum
+
+Genista
+
+KC - aetnensis KC - tenera KF - tinctoria KF - hispanica occidentalis KF
+- anglica KF - pilosa
+
+Hedera -
+
+KD - helix etc
+
+Muehlenbeckia
+
+KD - complexa
+
+Fallopia
+
+KD - baldschuanica
+
+Empetrum
+
+KE - nigrum \#EVERGREEN
+
+Ledum
+
+KE - palustre \#EVERGREEN
+
+Daboecia
+
+KE - cantabrica \#EVERGREEN
+
+Vaccinium
+
+KE - vitis-idaea \#EVERGREEN KE - macrocarpon \#EVERGREEN KE - oxycoccos
+\#EVERGREEN KE - microcarpon \#EVERGREEN KF - uliginosum
+
+Andromeda
+
+KE - polifolia \#EVERGREEN
+
+Herniaria
+
+KF - ciliolata \#EVERGREEN???
+
+Suadea
+
+KF - vera \#EVERGREEN
+
+Artemisia
+
+KF - campestris maritima \#EVERGREEN??
+
+Sedum
+
+KF - praealtum \#EVERGREEN
+
+Daphne
+
+KF - laureola \#EVERGREEN KF - mezereum
+
+Iberis
+
+KF - sempervirens \#EVERGREEN
+
+Arctostaphylos
+
+KF - uva-ursi \#EVERGREEN
+
+Diapensia
+
+KF - lapponica \#EVERGREEN
+
+\begin{verbatim}
+Lvs toothed
+\end{verbatim}
+
+Chaenomeles
+
+NA - japonica NA - speciosa
+
+Berberis
+
+NA - many sp
+
+Ribes
+
+NA, PB - uva-crispa PB - rubrum PB - spicatum PB - alpinus PB - odoratum
+PB - nigrum PB -sanguineum
+
+Pyracantha
+
+NA - coccinea \#EVERGREEN
+
+Rhamnus
+
+NA - cathartica ND - alaternus
+
+Prunus
+
+NA - spinosa ND - laurocerasus, lusitanica \#EVERGREEN NF - many sp
+
+Crataegus
+
+NA - mollis NA - persimilis
+
+Malus
+
+NA - sylvestris NF - domestica
+
+Pyrus
+
+NA - communis NA - pyraster NA - cordata
+
+Dryas
+
+NB - octopetala \#EVERGREEN
+
+Gaultheria
+
+NB, ND - shallon \#EVERGREEN NB - procumbens \#EVERGREEN ND - mucronata
+
+Salix
+
+NB - many sp NF - many sp
+
+Arctostaphylos
+
+NB - alpinus
+
+Vaccinium
+
+NB - myrtillus NB - vitis-idaea \#EVERGREEN
+
+Phyllodoce
+
+NB - caerulea \#EVERGREEN
+
+Tilia
+
+NB - petiolaris, tomentosa NE - many sp NF - many sp
+
+Populus
+
+NC - many sp NF - many sp PA - many sp
+
+Sorbus
+
+NC - many sp PA - many sp PA - torminalis
+
+SD - aucuparia, domestica, cashmiriana, pseudohupehensis
+
+Escallonia \#EVERGREEN
+
+ND - macrantha
+
+Arbutus \#EVERGREEN
+
+ND - unedo
+
+Leucothoe \#EVERGREEN
+
+ND - fontanesiana
+
+Parrotia
+
+NE - persica
+
+Alnus
+
+NE - glutinosa, incana, rubra NF - cordata
+
+Castanea
+
+NE - sativa
+
+Corylus
+
+NE - avenalla, colurna PB - avenalla
+
+Betula
+
+NE - many sp
+
+Ulmus
+
+NE - many sp
+
+Carpinus
+
+NE - betulus
+
+Ostrya
+
+NE - carpinifolia
+
+Kerria
+
+NE - japonica
+
+Fagus
+
+NE - sylvatica
+
+Nothofagus
+
+NE - obliqua, x dodecaphleps, alpina
+
+Amelanchier
+
+NF - lamarckii
+
+Myrica
+
+NF - gale, pensylvanica
+
+Baccharis
+
+NF - halmifolia
+
+Spiraea
+
+NF - many sp PB - many sp
+
+Morus
+
+NF - nigra
+
+Mespilus
+
+NF - germanica
+
+Aronia
+
+NF - arbutifolia, melanocarpa
+
+Amelanchier
+
+NF - lamarckii
+
+\hypertarget{section-1}{%
+\subsubsection{}\label{section-1}}
+
+leaves lobed
+
+Lavatera
+
+PA - arborea PB - x clementii \#EVERGREEN
+
+Platanus
+
+PA - x hispanica, orientalis
+
+Trachycarpus
+
+PA - fortunei \#EVERGREEN
+
+Ficus
+
+PA, PB - carica
+
+Liriodendron
+
+PA - tulipifera
+
+Crataegus
+
+PB - monogyna, laevigata
+
+Santolina
+
+PB - chamaecyparissus \#EVERGREEN
+
+Rubus
+
+PB - tricolor \#EVERGREEN PB - odoratus PB - parviflorus
+
+RF - all other brambles SA - cockburnianus, idaeus
+
+Dryas
+
+PB - octopetala \#EVERGREEN
+
+Fatsia
+
+PB - japonica \#EVERGREEN
+
+Vitis
+
+PC - vinifera, coignetiae
+
+Parthenocissus
+
+PC - tricuspidata RH - inserta, quinquefolia
+
+Solanum
+
+PC - dulcamara
+
+Laburnum
+
+RA - anagryoides, x watereri, alpinum
+
+Ulex
+
+see key 2
+
+Leaves compound
+
+Choisya
+
+already keyed
+
+Medicago
+
+RG - arborea
+
+Akebia
+
+RH - quinata
+
+Rosa
+
+SA - many sp
+
+Robinia
+
+SB - pseudoacacia
+
+Juglans
+
+SB, SD - regia
+
+Coronilla
+
+SB - valentina \#EVERGREEN
+
+Potentilla
+
+SB - fruticosa
+
+Hippocrepis
+
+SB - emerus
+
+Cotulea
+
+SB - arborescens
+
+Rhus
+
+SD - typina
+
+Pterocarya
+
+SD - fraxinifolia
+
+Ailanthus
+
+SD - altissima
+
+Mahonia
+
+SD - aquifolium, x media \#EVERGREEN
+
+Sorbaria
+
+SD - sorbifolia, kirilowii, tomentosa
+
+Aralia
+
+TA - elata
+
+Acacia
+
+TA - dealbata \#EVERGREEN
+
+Lupinus
+
+RE - arborea
+
+Acaena?
+
+Cut text
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{16}
+\item
+  Bundle traces many (9 or more) in an elliptical, arc shaped or
+  U-shaped series -\textgreater{} 19
+\item
+  Bundle traces fewer (7 or less). Buds not superposed. -\textgreater{}
+  21
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{18}
+  \tightlist
+  \item
+    Pith chambered \ldots{} \emph{Paulownia} (\textgreater{}3)
+  \item
+    Pith not chambered \ldots{} \emph{Fraxinus} (\textgreater{}3)
+  \end{enumerate}
+\item
+  Buds naked often behind a persistent petiole base \ldots{}
+  \emph{Cornus} (3)
+\item
+  Buds with 5-6 scales (thorny?) \ldots{} \emph{Rhamnus} (3)
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{22}
+  \tightlist
+  \item
+    Terminal buds very large, at least 2x as large as laterals, 20mm+.
+    Leaf scars very large, distinct \ldots{} \emph{Aesculus}
+    (\textgreater{}3)
+  \item
+    Terminal buds not much larger than laterals, or absent
+    -\textgreater{} 25
+  \end{enumerate}
+\item
+  Stipule scars large and obvious ± 1/4 to 1/2 size of leaf scars
+  \ldots{} \emph{Staphylea} (3)
+\item
+  Stipule scars absent or not obvious -\textgreater{} 27
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{26}
+  \tightlist
+  \item
+    Buds with a pair of scales meeting in the middle or ± so - buds
+    globose, red \ldots{} \emph{Viburnum} (3)
+  \item
+    Buds with \textgreater{} 2 scales or buds naked -\textgreater{} 29
+  \end{enumerate}
+\item
+  Terminal buds or all buds naked -\textgreater{} 31
+\item
+  All buds with scales -\textgreater{} 35
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{30}
+  \tightlist
+  \item
+    Naked buds stellate scurfy \ldots{} \emph{Viburnum} (3)
+  \item
+    Naked buds not stellate scurfy -\textgreater{} 33
+  \end{enumerate}
+\item
+  Bundle traces 3. Lateral buds \textgreater{}5mm, adpressed, hairy
+  \ldots{} \emph{Cornus} (3)
+\item
+  Bundle traces \textgreater{}3. Lateral buds minute \textless{}2mm
+  \ldots{} \emph{Hydrangea} (3, but check all Hydrangeas)
+\end{enumerate}
+
+Vegetative key to Quercus species:
+
+Quercus - buds with 5-ranked scales, clustered towards end of twig.
+Fruits nuts held in a cupule.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Leaves evergreen, white to grey woolly below at least when young
+  -\textgreater{} 3
+\item
+  Leaves deciduous -\textgreater{} 5
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Bark corky, leaves with 5-8 spine tipped teeth \ldots{} Quercus
+    suber
+  \item
+    Bark not corky, leaves only spined on young shoots \ldots{} Quercus
+    ilex
+  \end{enumerate}
+\item
+  Terminal bud cluster with long, narrow, persistent stipules \ldots{}
+  Quercus cerris
+\item
+  Terminal bud cluster with without long, narrow, persistent stipules
+  -\textgreater{} 7
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Leaves lobed with aristate teeth. Hairless except for tufts of
+    orange stellate hairs in vein axils below. Petiole
+    \textgreater{}2.5cm -\textgreater{} 9
+  \item
+    Leaves not toothed with aristate teeth. hairs present or not, but
+    not as above. Petiole \textless{}2.5cm -\textgreater{} 11
+  \end{enumerate}
+\item
+  Leaves dull above, lobes \textless{} half way to midrib. Hair tufts
+  inconspicuous \ldots{} Quercus rubra
+\item
+  Leaves shiny above, lobes \textgreater{} half way to midrib. Hair
+  tufts obvious \ldots{} Quercus coccinea
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{10}
+  \tightlist
+  \item
+    Petiole to 1cm. Leaves cordate with reflexed auricles at base. Dull
+    dark green above. Hairless or simple hairs below \ldots{} Quercus
+    robur
+  \item
+    Petiole \textgreater{}1cm. Leaves cuneate, auricles absent. Shiny
+    dark green above. Hairs stellate below \ldots{} Quercus petraea
+  \end{enumerate}
+\end{enumerate}
+
+Glossary: Stipules - small herbaceous organs at base of buds or petiole
+Stellate - star shaped Aristate - with an awn or bristle Cordate - heart
+shaped, with base rounded Auricules - small lobed appendage Cuneate -
+tapered to a base
+
+\bibliography{EndnoteLib2.bib}
+
+
+\end{document}
