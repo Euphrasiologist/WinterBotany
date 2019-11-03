@@ -1,0 +1,199 @@
+# Key 4: Leaves or leaf scars opposite
+
+1. Plants scrambling, climbing or parasitic on trees -> Key 4.1
+2. Plants not as above -> 3
+    3. Plants evergreen -> Key 4.2
+    4. Plants deciduous -> Key 4.3
+
+## Key 4.1: Climbing, or epiphytic plants parasitic on trees
+
+1. Plant parasitic on tree branches with twigs repeatedly forked at the nodes -> 3
+2. Plant rooted in soil -> 5
+    3. Twigs sickly green ... *Viscum* (*album*)
+    4. Twigs brown ... *Loranthus* (rare hortal) 
+5. Evergreen (or semi-evergreen) -> 7 
+6. Deciduous -> 9
+    7. Leaves simple ... *Lonicera*
+    8. Leaves compound, climbing using coiling petioles ... *Clematis* 
+9. Climbing by coiling petioles, persisting in winter ... *Clematis*
+10. Climbing by aerial roots or scrambling -> 11
+    11. Anvil shaped hairs on stems, stems twining clockwise, fruits persistent with many overlapping papery bracts ... *Humulus* (*lupulus*)
+    12. Not as above -> 13
+13. Bundle traces 1, scrambling, weakly climbing ... *Jasminum* (*nudiflorum*)
+14. Bundle traces >1 -> 15
+    15. Bundle traces 3 ... *Lonicera* 
+    16. Bundle traces 5 ... *Schizophragma* (*hydrangoides*)
+
+## Key 4.2: Evergreen plants
+
+
+1. Leaves simple and entire -> 3
+2. Leaves compound or toothed -> 5
+    3. Trailing, thin, wiry shrubs <20cm tall at maturity -> Key 4.2.1
+    4. Tree or upright shrub -> Key 4.2.2
+5. Leaves ternate... *Choisya* (*ternata*)
+6. Leaves toothed -> Key 4.2.3
+
+
+### Key 4.2.1: Wiring, creeping, trailing shrubs
+
+
+1. Leaves with stellate hairs ... *Helianthemum*
+2. Leaves with simple hairs or hairless -> 3
+    3. Leaves translucent dotted with sunken glands, aromatic ... *Thymus*
+    4. Leaves not translucent dotted or aromatic -> 5
+5. Leaves with revolute margins -> 7
+6. Leaves with flat margins -> 11
+    7. Leaves < 2mm long, petiole absent ... *Calluna*
+    8. Leaves >2mm long, petiole present -> 9
+9. Leaves linear, rounded in cross section, 2-5mm long ... *Frankenia*
+10. Leaves oblong, 5-8mm long -> *Loiseleuria*
+    11. Stipules absent -> 13
+    12. Stipules present ... *Herniaria*
+13. *Veronica* bifurcate Linnaea here
+14. *Veronica* bifurcate Linnaea here
+
+Linnaea here?
+
+### Key 4.2.2: Shrubs, trees. Leaves simple.
+
+1. Leaves with clear 2 pinnate translucent veins on leaves -> 3
+2. Leaves with 2 pinnate veins indistinct or absent -> 19
+    3. Leaves sessile -> 3
+    4. Leaves petiolate -> 9
+5. Leaves <1.5cm wide and with revolute margins at maturity -> 5
+6. Leaves >2cm wide, with either transulcent dotted leaves or with minute glands attached to veinlets. 
+    Leaf scars triangular, bundle trace 1, pith spongey and excavated (hollow) -> *Hypericum*
+7. Leaves <4mm wide, rosemary scented. Bundle traces 3 ... *Rosmarinus*
+8. Leaves >4mm wide (on average), odourless. Bundle traces in a transverse line ... *Kalmia*
+    9. Leaves >2cm long -> 11
+    10. Leaves <2cm long ... *Lonicera* 
+11. Leaves with dendritic hairs ... *Phlomis*
+12. Leaves with hairs simple or absent -> 13
+    13. Leaves with dense silver silky hairs below ... *Olearia* (GARRYA? LEAVES GREY WOOLLY BELOW AND UNDULATE LEAF MARGINS?)
+    14. Leaves hairless both sides, except for vein axils below -> 15
+15. Vein axils below with tufts of hairs ... *Viburnum*
+16. Leaves glabrous -> 17
+    17. Sipules present, fused between petiole bases, young twigs ± square ... *Coprosma*
+    18. Stipules absent, young twigs rounded, at most angled slightly below the nodes ... *Ligustrum*
+19. Leaves white hairy at least below, strongly aromatic -> 21
+20. Leaves never white hairy, aromatic or not -> 23
+    21. Leaves hairy with long stellate hairs both sides, lavendar scented ... *Lavandula*
+    22. Leaves glabrous above, rosemary scented ... *Rosmarinus*
+23. Twigs square, leaves odorous -> 25
+24. Twigs round, leaves odourless -> 29
+    25. Leaves gland pitted one or either side -> 25
+    26. Leaves not gland pitted -> *Buxus* (*sempervirens*)
+27. Young twigs green, minutely ciliate, menthol scented ... *Hyssopus*
+28. Young twigs whitish, leaves long ciliate at base, sage scented ... *Satureja*
+    29. Leaves strongly revolute, <2mm long, sessile ... *Calluna*
+    30. Leaves not revolute -> 31
+31. Leaves fleshy, mealy grey <6cm, not valvate when developing ... *Atriplex*
+32. Leaves not fleshy, valvate when developing ...  *Veronica* (sect Hebe)
+
+### Key 4.2.3: Shrubs, trees. Leaves toothed.
+ 
+1. Twigs with dendritic hairs ... *Phlomis*
+2. Twigs never with dendritic hairs -> 3
+    3. Twigs with stellate hairs -> 5
+    4. Twigs without stellate hairs -> 7
+5. Stipules present, leaves white felted below ... *Buddleja*
+6. Stipules absent, leaves stellate hairy below ... *Viburnum*
+    7. Leaves < 2cm long, stems creeping and prostrate ... *Linnaea*
+    8. Leaves >2cm long, stems never creeping -> 9
+9. Petiole with 1 vascular bundle -> 11
+10. Petiole with 3 vascular bundles -> 13
+    11. Twigs square ... *Phygelius*
+    12. Twigs round -> 15 
+13. Not net veined, weak 2 pinnate veins. Leaves with yellow blotches above, petiole green ... *Aucuba* (*japonica*)
+14. Net veined and strongly 3-pli-veined. No yellow blotches, petiole reddish ... *Viburnum*
+    15. Young twigs brown, each leaf tooth with a fragile claw like gland ... *Euonymus*
+    16. Young twigs green, leaf teeth without glands -> 17
+17. Leaves cuneate at base, buds with scales ... *Rhamnus*
+18. Leaves rounded at base, buds naked ... *Phillyrea* 
+
+## Key 4.3: Deciduous plants
+
+1. Bundle trace 1 -> Key 4.3.1
+2. Bundle traces >1 -> 5
+    3. Bundle traces 3 -> Key 4.3.2
+    4. Bundle traces >3 -> Key 4.3.3
+
+### Key 4.3.1: Bundle trace 1
+
+1. Twigs green ... *Euonymus*
+2. Twigs not green when mature -> 3
+    3. Trees -> 5
+    4. Shrubs -> 9
+5. Terminal buds always present, buds felted brown, grey or black ... *Fraxinus*
+6. Terminal buds absent -> 11
+    7. Pith chambered, twigs densly hairy ... *Paulownia* (*tomentosa*)
+    8. Pith solid, twigs red brown... *Metasequoia* (*glyptostryboides*)
+9. Buds sometimes whorled in 3's... *Fuschia*
+10. Buds strictly opposite -> 11
+    11. Pith present, solid, whitish -> 13
+    12. Twigs hollow or chambered, brownish -> 15
+13. Buds mostly in pairs at twig apices, glandular ciliate with 6-7 scales ... *Syringa*
+14. Buds singular at twig apices, ciliate with ± 4 pairs of opposite scales ... *Ligustrum*
+    15. Buds >11 pairs of scales, twigs chambered to hollow between nodes ... *Forsythia*
+    16. Buds <4 pairs of scales, or absent, twigs hollow but never chambered -> 17
+17. Leaf scars mostly torn, partly connected by transverse ridges, buds with keeled scales. Fruits white or red berries ... *Symphoricarpos*
+18. Leaf scars never torn, triangularly lens shaped, not partly connected by ridges, buds without scales ... *Hypericum*
+    
+### Key 4.3.2: Bundle traces 3
+
+1. Transverse ridge not present between buds or leaf scars -> 3
+2. Transverse ridge present between buds or leaf scars, or leaf scars abut -> 5
+    3. Shoots thorny, buds with 8-10 dark brown scales, terminal buds present... *Rhamnus* (*cathartica*)
+    4. Shoots not thorny, buds red with one scale visible, terminal buds absent... *Cercidiphyllum* (*japonicum*)
+5. Buds hidden behind leaf scar (which is like a thin membrane)... *Philadelphus* 
+6. Buds exposed and obvious -> 7
+    7. Buds naked -> 9
+    8. Buds with scales -> 13
+9. Only terminal bud naked, twigs stout... *Hydrangea*
+10. All buds naked -> 11
+    11. Twigs but especially buds with stellate hairs... *Viburnum*
+    12. Twigs and buds without stellate hairs but with medifixed hairs... *Cornus*
+13. Stipule scars large and obvious... *Staphylea* 
+14. Stipule scars absent or not obvious -> 15
+    15. Buds with a pair of scales fused, enveloping bud, buds globose, red. Or flowering in winter, fragrant... *Viburnum* 
+    16. Bud scales >2, not fused, not flowering in winter -> 17
+17. Pith hollow between nodes -> 19
+18. Pith solid, or spongey -> 23
+    19. Buds solitary, twigs green ... *Leycesteria*
+    20. Buds often superposed or collateral, twigs never green -> 21
+21. Buds >3mm long, with buds often superposed... *Lonicera*
+22. Buds <3mm long, buds often collateral... *Symphoricarpos*
+    23. Twigs with 2-4 ridges decurrent from nodes. 2-valved capsules persistent ... *Weigela* 
+    24. Twigs without ridges decurrent from nodes, fruits rarely persistent -> 25
+25. Bundle traces forming a line, fruits persistent, bristly with 5 lobed calyx...*Kolkwitzia*
+26. Bundle traces distinct, fruits not persistent, or if they are, not as above -> 27
+    27. Pith spongey, twigs stout... *Sambucus*
+    28. Pith solid, twigs more slender... *Acer*
+
+### Key 4.3.3: Bundle traces >3
+
+1. Leaf bases obscuring leaf scars -> 3
+2. Leaf scars clearly present -> 5
+    3. Twigs green, hollow... *Leycesteria* (*formosana*)
+    4. Twigs red or purplish, solid... *Acer* (section Palmata)
+5. At least some nodes in whorls of 3 -> 7
+6. Nodes strictly opposite -> 11
+    7. Bundle traces >8 in an ellipse or horseshoe shape, terminal bud absent -> 9
+    8. Bundle traces < 7 (usually 3-5), terminal bud present... *Hydrangea*
+9. Each node with one small leaf scar, and two large... *Catalpa* (*bignonioides*)
+10. Leaf scars all the same size... *Clerodendron* (*trichotomum*)
+    11. Large stipule scars between leaf scars... *Staphylea* (*pinnata*)
+    12. If stipule scars present, inconspicuous -> 13
+13. Trees -> 15
+14. Shrubs -> 21
+    15. Terminal bud present, pith solid -> 17
+    16. Terminal bud absent, pith chambered... *Paulownia* (*tomentosa*)
+17. Bundle traces many in a closed circle, buds furry... *Fraxinus*
+18. Bundle traces <9, distinct, buds not furry but may be hairy -> 19
+    19. Terminal buds >15mm, leaf scars large, shield shaped... *Aesculus*
+    20. Terminal buds < 15mm, leaf scars smaller, mostly crescent shaped... *Acer*
+21. Terminal bud very large (15-20mm), naked... *Hydrangea*
+22. Terminal bud smaller <15mm, often absent from shoots -> 23
+    23. Pith wide, spongey, twigs stout ... *Sambucus* 
+    24. Pith narrower, hard, more slender ... *Acer* 
